@@ -1,0 +1,4604 @@
+{
+  "export_note": "FICTIONAL DEMONSTRATION DATA — every company, person, filing, price and finding is invented. Not legal advice.",
+  "schema_version": "1.0.0",
+  "meta": {
+    "kind": "demo",
+    "created": "2026-11-11T12:00:00-06:00",
+    "updated": "2026-11-11T12:00:00-06:00",
+    "label": "FICTIONAL DEMONSTRATION DATA"
+  },
+  "settings": {
+    "system_state": "PRE_EXAM",
+    "phase": "Pre-exam build",
+    "selected_company": "DEMO-CO-NWX",
+    "weights": {
+      "course": 25,
+      "evidence": 25,
+      "argument": 20,
+      "financial": 10,
+      "thesis": 10,
+      "fit": 10
+    },
+    "course_docs_expected": 10,
+    "course_docs_ingested": 7,
+    "anomaly_threshold": 20,
+    "ratios": [
+      {
+        "name": "Backlog / revenue",
+        "num": "Backlog",
+        "den": "Revenue",
+        "mult": 1
+      },
+      {
+        "name": "DSO (days)",
+        "num": "Accounts receivable",
+        "den": "Revenue",
+        "mult": 91
+      }
+    ],
+    "readiness_manual": {
+      "Primary-source research workflows exist": true,
+      "Evidence and citation records import/export": true
+    },
+    "redteam": {
+      "No allegation converted into a finding": "pass",
+      "Causation adequately supported": "fail",
+      "Every quotation and citation genuine": "not_started"
+    },
+    "thesis": "DEMO: Northwind's FY2025 'robust demand' statements were actionable half-truths because contemporaneous backlog data contradicted them, but loss-causation attribution for the April 15, 2026 decline is contested by a confounding guidance cut.",
+    "thesis_history": [
+      {
+        "at": "2026-11-08T10:00:00-06:00",
+        "text": "DEMO: Northwind misled investors about demand."
+      }
+    ],
+    "perspective": "Opposing / plaintiff counsel",
+    "page_limit_override": null
+  },
+  "assignment": {
+    "title": {
+      "status": "pending",
+      "value": ""
+    },
+    "instructions": {
+      "status": "pending",
+      "value": ""
+    },
+    "company_list": {
+      "status": "pending",
+      "value": ""
+    },
+    "perspectives": {
+      "status": "pending",
+      "value": ""
+    },
+    "page_limit": {
+      "status": "pending",
+      "value": ""
+    },
+    "citation_style": {
+      "status": "pending",
+      "value": ""
+    },
+    "source_restrictions": {
+      "status": "pending",
+      "value": ""
+    },
+    "ai_restrictions": {
+      "status": "pending",
+      "value": ""
+    },
+    "submission_requirements": {
+      "status": "pending",
+      "value": ""
+    },
+    "deadline": {
+      "status": "pending",
+      "value": ""
+    }
+  },
+  "companies": [
+    {
+      "id": "DEMO-CO-NWX",
+      "name": "Northwind Exemplar Corp. (fictional)",
+      "ticker": "NWXF",
+      "cik": {
+        "$s": "not_applicable",
+        "note": "Fictional company"
+      },
+      "entity_type": "Operating issuer (SEC reporting)",
+      "reporting_status": "Exchange Act §12(b) registrant",
+      "industry": "Industrial sensors",
+      "securities_activities": "Listed common stock; S-8 equity plans; no registered offering in window.",
+      "us_nexus": "Fictional U.S. exchange listing — Morrison satisfied in the hypothetical.",
+      "perspective_fit": "Plaintiff-side stronger",
+      "summary": "Demand statements in FY2025 filings vs. declining backlog; CFO sales before April 2026 corrective earnings release.",
+      "source_note": "Fictional demo",
+      "scores": {
+        "course": {
+          "score": 5,
+          "evidence_ids": [
+            "DEMO-EV-NWX-0001",
+            "DEMO-EV-NWX-0002"
+          ],
+          "note": "Classic 10b-5 half-truth fact pattern."
+        },
+        "evidence": {
+          "score": 4,
+          "evidence_ids": [
+            "DEMO-EV-NWX-0001",
+            "DEMO-EV-NWX-0002",
+            "DEMO-EV-NWX-0003"
+          ],
+          "note": "Filed statements and audited notes."
+        },
+        "argument": {
+          "score": 4,
+          "evidence_ids": [
+            "DEMO-EV-NWX-0005",
+            "DEMO-EV-NWX-0008"
+          ],
+          "note": "Strong defenses on puffery and confounding guidance."
+        },
+        "financial": {
+          "score": 4,
+          "evidence_ids": [
+            "DEMO-EV-NWX-0002",
+            "DEMO-EV-NWX-0009"
+          ],
+          "note": ""
+        },
+        "thesis": {
+          "score": 3,
+          "evidence_ids": [
+            "DEMO-EV-NWX-0006"
+          ],
+          "note": ""
+        },
+        "fit": {
+          "score": 4,
+          "evidence_ids": [
+            "DEMO-EV-NWX-0001"
+          ],
+          "note": "Two to three issues fit 12–15 pages."
+        }
+      }
+    },
+    {
+      "id": "DEMO-CO-CVB",
+      "name": "Corvid Biotherapeutics, Inc. (fictional)",
+      "ticker": "CVBF",
+      "cik": {
+        "$s": "not_applicable",
+        "note": "Fictional company"
+      },
+      "entity_type": "Operating issuer (SEC reporting)",
+      "reporting_status": "Exchange Act §12(b) registrant",
+      "industry": "Biotechnology",
+      "securities_activities": "S-3 shelf takedown (follow-on offering) in March 2026.",
+      "us_nexus": "Fictional U.S. listing.",
+      "perspective_fit": "Either",
+      "summary": "Follow-on prospectus described Phase 2 enrollment as 'on track' while a clinical hold notice was pending.",
+      "source_note": "Fictional demo",
+      "scores": {
+        "course": {
+          "score": 4,
+          "evidence_ids": [
+            "DEMO-EV-CVB-0001"
+          ],
+          "note": "§11 / §12(a)(2) plus Omnicare opinion analysis."
+        },
+        "evidence": {
+          "score": 3,
+          "evidence_ids": [
+            "DEMO-EV-CVB-0001",
+            "DEMO-EV-CVB-0002"
+          ],
+          "note": ""
+        },
+        "argument": {
+          "score": null,
+          "evidence_ids": [],
+          "note": ""
+        },
+        "financial": {
+          "score": 2,
+          "evidence_ids": [],
+          "note": "Scored without evidence — excluded until linked."
+        },
+        "thesis": {
+          "score": null,
+          "evidence_ids": [],
+          "note": ""
+        },
+        "fit": {
+          "score": 3,
+          "evidence_ids": [
+            "DEMO-EV-CVB-0001"
+          ],
+          "note": ""
+        }
+      }
+    },
+    {
+      "id": "DEMO-CO-HLL",
+      "name": "Halcyon Ledger Labs, Inc. (fictional)",
+      "ticker": {
+        "$s": "not_applicable",
+        "note": "Private company"
+      },
+      "cik": {
+        "$s": "missing",
+        "note": "No Form D located"
+      },
+      "entity_type": "Digital-asset business",
+      "reporting_status": "Non-reporting / private",
+      "industry": "Blockchain infrastructure",
+      "securities_activities": "2025 token pre-sale (SAFT-like agreements) and 2026 public token distribution.",
+      "us_nexus": {
+        "$s": "disputed",
+        "note": "Purchasers in U.S. and abroad; geofencing claims unverified."
+      },
+      "perspective_fit": "Either",
+      "summary": "Token sale marketing emphasized team efforts and price appreciation; classification under the March 2026 SEC taxonomy is contested.",
+      "source_note": "Fictional demo",
+      "scores": {
+        "course": {
+          "score": 4,
+          "evidence_ids": [
+            "DEMO-EV-HLL-0001"
+          ],
+          "note": "Howey / §5."
+        },
+        "evidence": {
+          "score": 2,
+          "evidence_ids": [
+            "DEMO-EV-HLL-0001"
+          ],
+          "note": "Mostly marketing materials."
+        },
+        "argument": {
+          "score": 4,
+          "evidence_ids": [],
+          "note": "Unsupported score — excluded."
+        },
+        "financial": {
+          "score": null,
+          "evidence_ids": [],
+          "note": ""
+        },
+        "thesis": {
+          "score": null,
+          "evidence_ids": [],
+          "note": ""
+        },
+        "fit": {
+          "score": null,
+          "evidence_ids": [],
+          "note": ""
+        }
+      }
+    },
+    {
+      "id": "DEMO-CO-BRC",
+      "name": "Bramble Ridge Capital Advisers LLC (fictional)",
+      "ticker": {
+        "$s": "not_applicable",
+        "note": "Private adviser"
+      },
+      "cik": "",
+      "entity_type": "Investment adviser",
+      "reporting_status": "Registered investment adviser",
+      "industry": "Wealth management",
+      "securities_activities": {
+        "$s": "unavailable",
+        "note": "Form ADV not yet reviewed"
+      },
+      "us_nexus": "",
+      "perspective_fit": "In-house stronger",
+      "summary": "Revenue-sharing arrangement possibly under-disclosed in Form ADV Part 2A. Research not started.",
+      "source_note": "Fictional demo",
+      "scores": {}
+    }
+  ],
+  "doctrines": [
+    {
+      "id": "DEMO-DOC-0001",
+      "topic": "Securities fraud",
+      "subtopic": "Rule 10b-5 private action",
+      "statute": "Exchange Act §10(b); Rule 10b-5",
+      "controlling_interpretation": "",
+      "case_ids": [
+        "DEMO-AUTH-BASIC",
+        "DEMO-AUTH-TELLABS",
+        "DEMO-AUTH-DURA",
+        "DEMO-AUTH-MACQUARIE"
+      ],
+      "elements": "Misstatement/omission; materiality; scienter; connection; reliance; economic loss; loss causation",
+      "defenses": "Puffery; safe harbor; truth-on-the-market; no price impact; no loss causation",
+      "distinctions": "",
+      "evidentiary_requirements": "",
+      "private_right": "Implied",
+      "enforcement": "SEC injunction, penalties, disgorgement",
+      "business_application": "",
+      "issue_patterns": "Optimistic statements contradicted by internal metrics; insider sales before corrective news",
+      "course_reference": {
+        "$s": "missing",
+        "note": "Course notes not yet uploaded"
+      },
+      "course_relation": "course_not_yet_ingested",
+      "open_questions": ""
+    },
+    {
+      "id": "DEMO-DOC-0002",
+      "topic": "Securities fraud",
+      "subtopic": "Materiality",
+      "statute": "Rule 10b-5; Securities Act §11",
+      "controlling_interpretation": "",
+      "case_ids": [
+        "DEMO-AUTH-TSC",
+        "DEMO-AUTH-BASIC",
+        "DEMO-AUTH-MATRIXX"
+      ],
+      "elements": "Substantial likelihood a reasonable investor would consider it important (total mix); probability × magnitude for contingent events",
+      "defenses": "",
+      "distinctions": "",
+      "evidentiary_requirements": "",
+      "private_right": "Unknown",
+      "enforcement": "",
+      "business_application": "",
+      "issue_patterns": "",
+      "course_reference": {
+        "$s": "missing",
+        "note": "Course notes not yet uploaded"
+      },
+      "course_relation": "course_not_yet_ingested",
+      "open_questions": ""
+    },
+    {
+      "id": "DEMO-DOC-0003",
+      "topic": "Securities fraud",
+      "subtopic": "Scienter and PSLRA pleading",
+      "statute": "15 U.S.C. §78u-4(b)(2)",
+      "controlling_interpretation": "",
+      "case_ids": [
+        "DEMO-AUTH-HOCHFELDER",
+        "DEMO-AUTH-TELLABS"
+      ],
+      "elements": "Strong inference — cogent and at least as compelling as opposing inference",
+      "defenses": "",
+      "distinctions": "",
+      "evidentiary_requirements": "",
+      "private_right": "Unknown",
+      "enforcement": "",
+      "business_application": "",
+      "issue_patterns": "",
+      "course_reference": {
+        "$s": "missing",
+        "note": "Course notes not yet uploaded"
+      },
+      "course_relation": "course_not_yet_ingested",
+      "open_questions": ""
+    },
+    {
+      "id": "DEMO-DOC-0004",
+      "topic": "Securities fraud",
+      "subtopic": "Reliance and loss causation",
+      "statute": "Rule 10b-5",
+      "controlling_interpretation": "",
+      "case_ids": [
+        "DEMO-AUTH-BASIC",
+        "DEMO-AUTH-HALLIBURTON2",
+        "DEMO-AUTH-GOLDMAN",
+        "DEMO-AUTH-DURA"
+      ],
+      "elements": "Fraud-on-the-market presumption; price impact; corrective disclosure",
+      "defenses": "",
+      "distinctions": "",
+      "evidentiary_requirements": "",
+      "private_right": "Unknown",
+      "enforcement": "",
+      "business_application": "",
+      "issue_patterns": "",
+      "course_reference": {
+        "$s": "missing",
+        "note": "Course notes not yet uploaded"
+      },
+      "course_relation": "course_not_yet_ingested",
+      "open_questions": ""
+    },
+    {
+      "id": "DEMO-DOC-0005",
+      "topic": "Registration",
+      "subtopic": "Section 11 liability",
+      "statute": "Securities Act §11",
+      "controlling_interpretation": "",
+      "case_ids": [
+        "DEMO-AUTH-OMNICARE",
+        "DEMO-AUTH-SLACK"
+      ],
+      "elements": "Misstatement in registration statement; materiality; traceability; statutory defendant",
+      "defenses": "",
+      "distinctions": "",
+      "evidentiary_requirements": "",
+      "private_right": "Express",
+      "enforcement": "",
+      "business_application": "",
+      "issue_patterns": "",
+      "course_reference": {
+        "$s": "missing",
+        "note": "Course notes not yet uploaded"
+      },
+      "course_relation": "course_not_yet_ingested",
+      "open_questions": ""
+    },
+    {
+      "id": "DEMO-DOC-0006",
+      "topic": "Registration",
+      "subtopic": "Section 5 and exemptions; definition of a security",
+      "statute": "Securities Act §§2(a)(1), 4, 5; Reg D",
+      "controlling_interpretation": "",
+      "case_ids": [
+        "DEMO-AUTH-HOWEY",
+        "DEMO-AUTH-RALSTON"
+      ],
+      "elements": "Security; no registration; offer or sale; jurisdictional means; no exemption",
+      "defenses": "",
+      "distinctions": "",
+      "evidentiary_requirements": "",
+      "private_right": "Express",
+      "enforcement": "",
+      "business_application": "",
+      "issue_patterns": "",
+      "course_reference": {
+        "$s": "missing",
+        "note": "Course notes not yet uploaded"
+      },
+      "course_relation": "course_not_yet_ingested",
+      "open_questions": ""
+    },
+    {
+      "id": "DEMO-DOC-0007",
+      "topic": "Insider trading",
+      "subtopic": "Classical, misappropriation, tipping",
+      "statute": "Exchange Act §10(b); Rules 10b5-1, 10b5-2, 14e-3",
+      "controlling_interpretation": "",
+      "case_ids": [
+        "DEMO-AUTH-CHIARELLA",
+        "DEMO-AUTH-DIRKS",
+        "DEMO-AUTH-OHAGAN",
+        "DEMO-AUTH-SALMAN"
+      ],
+      "elements": "MNPI; trading while aware; duty; scienter",
+      "defenses": "",
+      "distinctions": "",
+      "evidentiary_requirements": "",
+      "private_right": "Limited",
+      "enforcement": "",
+      "business_application": "",
+      "issue_patterns": "",
+      "course_reference": {
+        "$s": "missing",
+        "note": "Course notes not yet uploaded"
+      },
+      "course_relation": "course_not_yet_ingested",
+      "open_questions": ""
+    },
+    {
+      "id": "DEMO-DOC-0008",
+      "topic": "Secondary liability",
+      "subtopic": "Control persons",
+      "statute": "Exchange Act §20(a); Securities Act §15",
+      "controlling_interpretation": "",
+      "case_ids": [
+        "DEMO-AUTH-CENTRALBANK",
+        "DEMO-AUTH-JANUS"
+      ],
+      "elements": "Primary violation; control; culpable participation (circuit split)",
+      "defenses": "",
+      "distinctions": "",
+      "evidentiary_requirements": "",
+      "private_right": "Express",
+      "enforcement": "",
+      "business_application": "",
+      "issue_patterns": "",
+      "course_reference": {
+        "$s": "missing",
+        "note": "Course notes not yet uploaded"
+      },
+      "course_relation": "course_not_yet_ingested",
+      "open_questions": ""
+    },
+    {
+      "id": "DEMO-DOC-0009",
+      "topic": "Enforcement",
+      "subtopic": "SEC remedies",
+      "statute": "Exchange Act §21(d)",
+      "controlling_interpretation": "",
+      "case_ids": [
+        "DEMO-AUTH-LIU",
+        "DEMO-AUTH-JARKESY",
+        "DEMO-AUTH-SRIPETCH"
+      ],
+      "elements": "Injunction; penalties; disgorgement (net profits); bars",
+      "defenses": "",
+      "distinctions": "",
+      "evidentiary_requirements": "",
+      "private_right": "None (SEC/DOJ only)",
+      "enforcement": "",
+      "business_application": "",
+      "issue_patterns": "",
+      "course_reference": {
+        "$s": "missing",
+        "note": "Course notes not yet uploaded"
+      },
+      "course_relation": "course_not_yet_ingested",
+      "open_questions": ""
+    }
+  ],
+  "authorities": [
+    {
+      "id": "DEMO-AUTH-SA-5",
+      "citation": "Securities Act of 1933 § 5, 15 U.S.C. § 77e",
+      "short_name": "Securities Act § 5",
+      "authority_type": "statute",
+      "jurisdiction": "US-Federal-Statute",
+      "binding_force": "binding_nationwide",
+      "date_decided_or_effective": "",
+      "rule_or_holding": "Prohibits offers and sales of securities through interstate commerce unless a registration statement is filed (offers) and effective (sales), subject to exemptions; prospectus delivery requirements.",
+      "holding_source": "model_knowledge_unverified",
+      "course_relation": "course_not_yet_ingested",
+      "course_explanation": "",
+      "current_validity": "verification_pending",
+      "validity_basis": "",
+      "verification_method": "",
+      "verified_date": "",
+      "pinpoints": "",
+      "issue_tags": "S5",
+      "source_url": ""
+    },
+    {
+      "id": "DEMO-AUTH-SA-11",
+      "citation": "Securities Act of 1933 § 11, 15 U.S.C. § 77k",
+      "short_name": "Securities Act § 11",
+      "authority_type": "statute",
+      "jurisdiction": "US-Federal-Statute",
+      "binding_force": "binding_nationwide",
+      "date_decided_or_effective": "",
+      "rule_or_holding": "Express private right against issuer, signers, directors, underwriters and experts for material misstatements or omissions in an effective registration statement; issuer strictly liable; others have due-diligence defenses; statutory damages formula and negative-causation defense.",
+      "holding_source": "model_knowledge_unverified",
+      "course_relation": "course_not_yet_ingested",
+      "course_explanation": "",
+      "current_validity": "verification_pending",
+      "validity_basis": "",
+      "verification_method": "",
+      "verified_date": "",
+      "pinpoints": "",
+      "issue_tags": "S11",
+      "source_url": ""
+    },
+    {
+      "id": "DEMO-AUTH-R-10B5",
+      "citation": "17 C.F.R. § 240.10b-5",
+      "short_name": "Rule 10b-5",
+      "authority_type": "regulation",
+      "jurisdiction": "US-Federal-Regulation",
+      "binding_force": "binding_nationwide",
+      "date_decided_or_effective": "",
+      "rule_or_holding": "(a) device, scheme or artifice to defraud; (b) untrue statement of material fact or omission of material fact necessary to make statements made not misleading; (c) act, practice or course of business operating as fraud - in connection with purchase or sale.",
+      "holding_source": "model_knowledge_unverified",
+      "course_relation": "course_not_yet_ingested",
+      "course_explanation": "",
+      "current_validity": "verification_pending",
+      "validity_basis": "",
+      "verification_method": "",
+      "verified_date": "",
+      "pinpoints": "",
+      "issue_tags": "10B5",
+      "source_url": ""
+    },
+    {
+      "id": "DEMO-AUTH-REL-33-11412",
+      "citation": "Application of the Federal Securities Laws to Certain Types of Crypto Assets, Rel. No. 33-11412 (Mar. 17, 2026), 91 Fed. Reg. 13714 (Mar. 23, 2026)",
+      "short_name": "SEC/CFTC crypto interpretive release (2026)",
+      "authority_type": "sec_interpretive_release",
+      "jurisdiction": "US-SEC",
+      "binding_force": "agency_position",
+      "date_decided_or_effective": "2026-03-17",
+      "rule_or_holding": "Five-category token taxonomy; explains how a non-security crypto asset may become subject to, and cease to be subject to, an investment contract under Howey; addresses mining, staking, wrapping, airdrops; supersedes 2019 staff framework.",
+      "holding_source": "secondary_confirmed",
+      "course_relation": "course_not_yet_ingested",
+      "course_explanation": "",
+      "current_validity": "in_force_status_checked",
+      "validity_basis": "Law-firm memos (Sullivan & Cromwell, Jones Day, Orrick; Mar.-Apr. 2026) and fintechlaw.ai report of Fed. Reg. publication; Corp Fin FAQs issued Sept. 25, 2026 (staff views).",
+      "verification_method": "",
+      "verified_date": "",
+      "pinpoints": "",
+      "issue_tags": "DIGI, SECURITY",
+      "source_url": ""
+    },
+    {
+      "id": "DEMO-AUTH-PROP-10S",
+      "citation": "Semiannual Reporting, Proposed Rule (May 5, 2026), Fed. Reg. doc. 2026-09095",
+      "short_name": "Form 10-S semiannual reporting proposal",
+      "authority_type": "sec_proposed_rule",
+      "jurisdiction": "US-SEC",
+      "binding_force": "not_law_proposed",
+      "date_decided_or_effective": "2026-05-05",
+      "rule_or_holding": "Would allow Exchange Act reporting companies to elect semiannual reports on new Form 10-S instead of quarterly 10-Qs.",
+      "holding_source": "secondary_confirmed",
+      "course_relation": "course_not_yet_ingested",
+      "course_explanation": "",
+      "current_validity": "proposed_not_final",
+      "validity_basis": "Federal Register document 2026-09095 (proposed rule) and practitioner summaries (S&C, Deloitte, PwC) May 2026; no adoption found as of 2026-11-11.",
+      "verification_method": "",
+      "verified_date": "",
+      "pinpoints": "",
+      "issue_tags": "DISC",
+      "source_url": ""
+    },
+    {
+      "id": "DEMO-AUTH-HOWEY",
+      "citation": "SEC v. W.J. Howey Co., 328 U.S. 293 (1946)",
+      "short_name": "Howey",
+      "authority_type": "scotus_opinion",
+      "jurisdiction": "US-SCOTUS",
+      "binding_force": "binding_nationwide",
+      "date_decided_or_effective": "1946-05-27",
+      "rule_or_holding": "An investment contract is a contract, transaction or scheme involving an investment of money in a common enterprise with an expectation of profits from the efforts of others.",
+      "holding_source": "model_knowledge_unverified",
+      "course_relation": "course_not_yet_ingested",
+      "course_explanation": "",
+      "current_validity": "verification_pending",
+      "validity_basis": "",
+      "verification_method": "",
+      "verified_date": "",
+      "pinpoints": "",
+      "issue_tags": "SECURITY, DIGI, S5",
+      "source_url": ""
+    },
+    {
+      "id": "DEMO-AUTH-RALSTON",
+      "citation": "SEC v. Ralston Purina Co., 346 U.S. 119 (1953)",
+      "short_name": "Ralston Purina",
+      "authority_type": "scotus_opinion",
+      "jurisdiction": "US-SCOTUS",
+      "binding_force": "binding_nationwide",
+      "date_decided_or_effective": "",
+      "rule_or_holding": "The private-offering exemption turns on whether offerees need the protection of registration (can fend for themselves / access to registration-type information); the issuer bears the burden of proving an exemption.",
+      "holding_source": "model_knowledge_unverified",
+      "course_relation": "course_not_yet_ingested",
+      "course_explanation": "",
+      "current_validity": "verification_pending",
+      "validity_basis": "",
+      "verification_method": "",
+      "verified_date": "",
+      "pinpoints": "",
+      "issue_tags": "S5",
+      "source_url": ""
+    },
+    {
+      "id": "DEMO-AUTH-OMNICARE",
+      "citation": "Omnicare, Inc. v. Laborers Dist. Council Constr. Indus. Pension Fund, 575 U.S. 175 (2015)",
+      "short_name": "Omnicare",
+      "authority_type": "scotus_opinion",
+      "jurisdiction": "US-SCOTUS",
+      "binding_force": "binding_nationwide",
+      "date_decided_or_effective": "",
+      "rule_or_holding": "A statement of opinion is an untrue statement of fact under § 11 only if not sincerely held or containing an embedded false fact; it may be misleading by omission if it omits material facts about the issuer's inquiry or knowledge that conflict with what a reasonable investor would take from the statement in context.",
+      "holding_source": "model_knowledge_unverified",
+      "course_relation": "course_not_yet_ingested",
+      "course_explanation": "",
+      "current_validity": "verification_pending",
+      "validity_basis": "",
+      "verification_method": "",
+      "verified_date": "",
+      "pinpoints": "",
+      "issue_tags": "S11, 10B5, OPINION",
+      "source_url": ""
+    },
+    {
+      "id": "DEMO-AUTH-SLACK",
+      "citation": "Slack Technologies, LLC v. Pirani, 598 U.S. 759 (2023)",
+      "short_name": "Slack",
+      "authority_type": "scotus_opinion",
+      "jurisdiction": "US-SCOTUS",
+      "binding_force": "binding_nationwide",
+      "date_decided_or_effective": "",
+      "rule_or_holding": "§ 11 requires a plaintiff to plead and prove that the securities purchased were registered under (traceable to) the allegedly defective registration statement.",
+      "holding_source": "model_knowledge_unverified",
+      "course_relation": "course_not_yet_ingested",
+      "course_explanation": "",
+      "current_validity": "verification_pending",
+      "validity_basis": "",
+      "verification_method": "",
+      "verified_date": "",
+      "pinpoints": "",
+      "issue_tags": "S11",
+      "source_url": ""
+    },
+    {
+      "id": "DEMO-AUTH-TSC",
+      "citation": "TSC Industries, Inc. v. Northway, Inc., 426 U.S. 438 (1976)",
+      "short_name": "TSC",
+      "authority_type": "scotus_opinion",
+      "jurisdiction": "US-SCOTUS",
+      "binding_force": "binding_nationwide",
+      "date_decided_or_effective": "",
+      "rule_or_holding": "An omitted fact is material if there is a substantial likelihood a reasonable shareholder would consider it important - i.e., it would have significantly altered the total mix of information made available.",
+      "holding_source": "model_knowledge_unverified",
+      "course_relation": "course_not_yet_ingested",
+      "course_explanation": "",
+      "current_validity": "verification_pending",
+      "validity_basis": "",
+      "verification_method": "",
+      "verified_date": "",
+      "pinpoints": "",
+      "issue_tags": "MAT, S14A",
+      "source_url": ""
+    },
+    {
+      "id": "DEMO-AUTH-BASIC",
+      "citation": "Basic Inc. v. Levinson, 485 U.S. 224 (1988)",
+      "short_name": "Basic",
+      "authority_type": "scotus_opinion",
+      "jurisdiction": "US-SCOTUS",
+      "binding_force": "binding_nationwide",
+      "date_decided_or_effective": "",
+      "rule_or_holding": "Adopts TSC materiality for 10b-5; contingent events assessed by probability and magnitude; rebuttable fraud-on-the-market presumption of reliance; silence absent a duty to disclose is not misleading.",
+      "holding_source": "model_knowledge_unverified",
+      "course_relation": "course_not_yet_ingested",
+      "course_explanation": "",
+      "current_validity": "verification_pending",
+      "validity_basis": "",
+      "verification_method": "",
+      "verified_date": "",
+      "pinpoints": "",
+      "issue_tags": "MAT, REL, 10B5",
+      "source_url": ""
+    },
+    {
+      "id": "DEMO-AUTH-MATRIXX",
+      "citation": "Matrixx Initiatives, Inc. v. Siracusano, 563 U.S. 27 (2011)",
+      "short_name": "Matrixx",
+      "authority_type": "scotus_opinion",
+      "jurisdiction": "US-SCOTUS",
+      "binding_force": "binding_nationwide",
+      "date_decided_or_effective": "",
+      "rule_or_holding": "No bright-line rule that adverse-event reports must be statistically significant to be material; materiality is contextual.",
+      "holding_source": "model_knowledge_unverified",
+      "course_relation": "course_not_yet_ingested",
+      "course_explanation": "",
+      "current_validity": "verification_pending",
+      "validity_basis": "",
+      "verification_method": "",
+      "verified_date": "",
+      "pinpoints": "",
+      "issue_tags": "MAT",
+      "source_url": ""
+    },
+    {
+      "id": "DEMO-AUTH-HOCHFELDER",
+      "citation": "Ernst & Ernst v. Hochfelder, 425 U.S. 185 (1976)",
+      "short_name": "Hochfelder",
+      "authority_type": "scotus_opinion",
+      "jurisdiction": "US-SCOTUS",
+      "binding_force": "binding_nationwide",
+      "date_decided_or_effective": "",
+      "rule_or_holding": "Private 10b-5 liability requires scienter - a mental state embracing intent to deceive, manipulate or defraud; negligence is insufficient (recklessness question reserved).",
+      "holding_source": "model_knowledge_unverified",
+      "course_relation": "course_not_yet_ingested",
+      "course_explanation": "",
+      "current_validity": "verification_pending",
+      "validity_basis": "",
+      "verification_method": "",
+      "verified_date": "",
+      "pinpoints": "",
+      "issue_tags": "SCI, 10B5",
+      "source_url": ""
+    },
+    {
+      "id": "DEMO-AUTH-TELLABS",
+      "citation": "Tellabs, Inc. v. Makor Issues & Rights, Ltd., 551 U.S. 308 (2007)",
+      "short_name": "Tellabs",
+      "authority_type": "scotus_opinion",
+      "jurisdiction": "US-SCOTUS",
+      "binding_force": "binding_nationwide",
+      "date_decided_or_effective": "",
+      "rule_or_holding": "Under the PSLRA, a 'strong inference' of scienter must be more than merely plausible - cogent and at least as compelling as any opposing inference, considering allegations holistically.",
+      "holding_source": "opinion_text_verified",
+      "course_relation": "course_not_yet_ingested",
+      "course_explanation": "",
+      "current_validity": "good_law_citator_checked",
+      "validity_basis": "FICTIONAL demo citator check",
+      "verification_method": "FICTIONAL demo: KeyCite by student",
+      "verified_date": "2026-11-09",
+      "pinpoints": "551 U.S. at 324 (demo pinpoint)",
+      "issue_tags": "SCI, PLEAD",
+      "source_url": ""
+    },
+    {
+      "id": "DEMO-AUTH-DURA",
+      "citation": "Dura Pharmaceuticals, Inc. v. Broudo, 544 U.S. 336 (2005)",
+      "short_name": "Dura",
+      "authority_type": "scotus_opinion",
+      "jurisdiction": "US-SCOTUS",
+      "binding_force": "binding_nationwide",
+      "date_decided_or_effective": "",
+      "rule_or_holding": "An inflated purchase price alone does not establish loss causation or economic loss; plaintiff must allege and prove a causal connection between the misrepresentation and the loss.",
+      "holding_source": "model_knowledge_unverified",
+      "course_relation": "course_not_yet_ingested",
+      "course_explanation": "",
+      "current_validity": "verification_pending",
+      "validity_basis": "",
+      "verification_method": "",
+      "verified_date": "",
+      "pinpoints": "",
+      "issue_tags": "LC",
+      "source_url": ""
+    },
+    {
+      "id": "DEMO-AUTH-HALLIBURTON2",
+      "citation": "Halliburton Co. v. Erica P. John Fund, Inc., 573 U.S. 258 (2014)",
+      "short_name": "Halliburton II",
+      "authority_type": "scotus_opinion",
+      "jurisdiction": "US-SCOTUS",
+      "binding_force": "binding_nationwide",
+      "date_decided_or_effective": "",
+      "rule_or_holding": "Declines to overrule Basic; defendants may rebut the presumption at class certification with evidence of no price impact.",
+      "holding_source": "model_knowledge_unverified",
+      "course_relation": "course_not_yet_ingested",
+      "course_explanation": "",
+      "current_validity": "verification_pending",
+      "validity_basis": "",
+      "verification_method": "",
+      "verified_date": "",
+      "pinpoints": "",
+      "issue_tags": "REL, CLASS",
+      "source_url": ""
+    },
+    {
+      "id": "DEMO-AUTH-GOLDMAN",
+      "citation": "Goldman Sachs Group, Inc. v. Arkansas Teacher Retirement System, 594 U.S. 113 (2021)",
+      "short_name": "Goldman",
+      "authority_type": "scotus_opinion",
+      "jurisdiction": "US-SCOTUS",
+      "binding_force": "binding_nationwide",
+      "date_decided_or_effective": "",
+      "rule_or_holding": "Courts may consider the generic nature of statements in assessing price impact at class certification; defendants bear the burden of persuasion on lack of price impact; mismatch between generic front-end statements and specific back-end disclosures weakens inflation-maintenance inference.",
+      "holding_source": "model_knowledge_unverified",
+      "course_relation": "course_not_yet_ingested",
+      "course_explanation": "",
+      "current_validity": "verification_pending",
+      "validity_basis": "",
+      "verification_method": "",
+      "verified_date": "",
+      "pinpoints": "",
+      "issue_tags": "REL, CLASS",
+      "source_url": ""
+    },
+    {
+      "id": "DEMO-AUTH-CENTRALBANK",
+      "citation": "Central Bank of Denver, N.A. v. First Interstate Bank of Denver, N.A., 511 U.S. 164 (1994)",
+      "short_name": "Central Bank",
+      "authority_type": "scotus_opinion",
+      "jurisdiction": "US-SCOTUS",
+      "binding_force": "binding_nationwide",
+      "date_decided_or_effective": "",
+      "rule_or_holding": "No private aiding-and-abetting liability under § 10(b).",
+      "holding_source": "model_knowledge_unverified",
+      "course_relation": "course_not_yet_ingested",
+      "course_explanation": "",
+      "current_validity": "verification_pending",
+      "validity_basis": "",
+      "verification_method": "",
+      "verified_date": "",
+      "pinpoints": "",
+      "issue_tags": "S20E, 10B5",
+      "source_url": ""
+    },
+    {
+      "id": "DEMO-AUTH-JANUS",
+      "citation": "Janus Capital Group, Inc. v. First Derivative Traders, 564 U.S. 135 (2011)",
+      "short_name": "Janus",
+      "authority_type": "scotus_opinion",
+      "jurisdiction": "US-SCOTUS",
+      "binding_force": "binding_nationwide",
+      "date_decided_or_effective": "",
+      "rule_or_holding": "The 'maker' of a statement under Rule 10b-5(b) is the person or entity with ultimate authority over its content and whether and how to communicate it.",
+      "holding_source": "model_knowledge_unverified",
+      "course_relation": "course_not_yet_ingested",
+      "course_explanation": "",
+      "current_validity": "verification_pending",
+      "validity_basis": "",
+      "verification_method": "",
+      "verified_date": "",
+      "pinpoints": "",
+      "issue_tags": "10B5",
+      "source_url": ""
+    },
+    {
+      "id": "DEMO-AUTH-MACQUARIE",
+      "citation": "Macquarie Infrastructure Corp. v. Moab Partners, L.P., 601 U.S. 257 (2024)",
+      "short_name": "Macquarie",
+      "authority_type": "scotus_opinion",
+      "jurisdiction": "US-SCOTUS",
+      "binding_force": "binding_nationwide",
+      "date_decided_or_effective": "",
+      "rule_or_holding": "Pure omissions (including failure to disclose information required by Item 303) are not actionable under Rule 10b-5(b); 10b-5(b) reaches half-truths that render statements made misleading.",
+      "holding_source": "model_knowledge_unverified",
+      "course_relation": "course_not_yet_ingested",
+      "course_explanation": "",
+      "current_validity": "verification_pending",
+      "validity_basis": "",
+      "verification_method": "",
+      "verified_date": "",
+      "pinpoints": "",
+      "issue_tags": "10B5, DISC",
+      "source_url": ""
+    },
+    {
+      "id": "DEMO-AUTH-CHIARELLA",
+      "citation": "Chiarella v. United States, 445 U.S. 222 (1980)",
+      "short_name": "Chiarella",
+      "authority_type": "scotus_opinion",
+      "jurisdiction": "US-SCOTUS",
+      "binding_force": "binding_nationwide",
+      "date_decided_or_effective": "",
+      "rule_or_holding": "Duty to disclose or abstain arises from a relationship of trust and confidence; mere possession of nonpublic information does not create a duty.",
+      "holding_source": "model_knowledge_unverified",
+      "course_relation": "course_not_yet_ingested",
+      "course_explanation": "",
+      "current_validity": "verification_pending",
+      "validity_basis": "",
+      "verification_method": "",
+      "verified_date": "",
+      "pinpoints": "",
+      "issue_tags": "IT",
+      "source_url": ""
+    },
+    {
+      "id": "DEMO-AUTH-DIRKS",
+      "citation": "Dirks v. SEC, 463 U.S. 646 (1983)",
+      "short_name": "Dirks",
+      "authority_type": "scotus_opinion",
+      "jurisdiction": "US-SCOTUS",
+      "binding_force": "binding_nationwide",
+      "date_decided_or_effective": "",
+      "rule_or_holding": "Tippee liability derives from the insider's breach; breach depends on whether the insider personally benefits from the disclosure; footnote recognizes constructive (temporary) insiders.",
+      "holding_source": "model_knowledge_unverified",
+      "course_relation": "course_not_yet_ingested",
+      "course_explanation": "",
+      "current_validity": "verification_pending",
+      "validity_basis": "",
+      "verification_method": "",
+      "verified_date": "",
+      "pinpoints": "",
+      "issue_tags": "IT",
+      "source_url": ""
+    },
+    {
+      "id": "DEMO-AUTH-OHAGAN",
+      "citation": "United States v. O'Hagan, 521 U.S. 642 (1997)",
+      "short_name": "O'Hagan",
+      "authority_type": "scotus_opinion",
+      "jurisdiction": "US-SCOTUS",
+      "binding_force": "binding_nationwide",
+      "date_decided_or_effective": "",
+      "rule_or_holding": "Upholds the misappropriation theory (deceptive use of confidential information in breach of a duty owed to the source) and Rule 14e-3(a) as applied.",
+      "holding_source": "model_knowledge_unverified",
+      "course_relation": "course_not_yet_ingested",
+      "course_explanation": "",
+      "current_validity": "verification_pending",
+      "validity_basis": "",
+      "verification_method": "",
+      "verified_date": "",
+      "pinpoints": "",
+      "issue_tags": "IT",
+      "source_url": ""
+    },
+    {
+      "id": "DEMO-AUTH-SALMAN",
+      "citation": "Salman v. United States, 580 U.S. 39 (2016)",
+      "short_name": "Salman",
+      "authority_type": "scotus_opinion",
+      "jurisdiction": "US-SCOTUS",
+      "binding_force": "binding_nationwide",
+      "date_decided_or_effective": "",
+      "rule_or_holding": "A gift of confidential information to a trading relative or friend satisfies Dirks' personal-benefit requirement.",
+      "holding_source": "model_knowledge_unverified",
+      "course_relation": "course_not_yet_ingested",
+      "course_explanation": "",
+      "current_validity": "verification_pending",
+      "validity_basis": "",
+      "verification_method": "",
+      "verified_date": "",
+      "pinpoints": "",
+      "issue_tags": "IT",
+      "source_url": ""
+    },
+    {
+      "id": "DEMO-AUTH-LIU",
+      "citation": "Liu v. SEC, 591 U.S. 71 (2020)",
+      "short_name": "Liu",
+      "authority_type": "scotus_opinion",
+      "jurisdiction": "US-SCOTUS",
+      "binding_force": "binding_nationwide",
+      "date_decided_or_effective": "",
+      "rule_or_holding": "Disgorgement is permissible equitable relief under § 21(d)(5) if it does not exceed net profits and is awarded for victims.",
+      "holding_source": "secondary_confirmed",
+      "course_relation": "course_not_yet_ingested",
+      "course_explanation": "",
+      "current_validity": "verification_pending",
+      "validity_basis": "",
+      "verification_method": "",
+      "verified_date": "",
+      "pinpoints": "",
+      "issue_tags": "ENF-REM",
+      "source_url": ""
+    },
+    {
+      "id": "DEMO-AUTH-JARKESY",
+      "citation": "SEC v. Jarkesy, 603 U.S. 109 (2024)",
+      "short_name": "Jarkesy",
+      "authority_type": "scotus_opinion",
+      "jurisdiction": "US-SCOTUS",
+      "binding_force": "binding_nationwide",
+      "date_decided_or_effective": "",
+      "rule_or_holding": "When the SEC seeks civil penalties for securities fraud, the Seventh Amendment entitles the defendant to a jury trial; the SEC may not adjudicate such claims in-house.",
+      "holding_source": "model_knowledge_unverified",
+      "course_relation": "course_not_yet_ingested",
+      "course_explanation": "",
+      "current_validity": "verification_pending",
+      "validity_basis": "",
+      "verification_method": "",
+      "verified_date": "",
+      "pinpoints": "",
+      "issue_tags": "ENF-REM, PROC",
+      "source_url": ""
+    },
+    {
+      "id": "DEMO-AUTH-SRIPETCH",
+      "citation": "Sripetch v. SEC, No. 25-466 (U.S. June 4, 2026)",
+      "short_name": "Sripetch",
+      "authority_type": "scotus_opinion",
+      "jurisdiction": "US-SCOTUS",
+      "binding_force": "binding_nationwide",
+      "date_decided_or_effective": "2026-06-04",
+      "rule_or_holding": "The SEC need not prove that investors suffered pecuniary loss before obtaining disgorgement in a civil enforcement action (unanimous, Gorsuch, J.).",
+      "holding_source": "secondary_confirmed",
+      "course_relation": "course_not_yet_ingested",
+      "course_explanation": "",
+      "current_validity": "verification_pending",
+      "validity_basis": "",
+      "verification_method": "",
+      "verified_date": "",
+      "pinpoints": "",
+      "issue_tags": "ENF-REM",
+      "source_url": "https://www.supremecourt.gov/opinions/25pdf/25-466_5i26.pdf"
+    },
+    {
+      "id": "DEMO-AUTH-GOVIL",
+      "citation": "SEC v. Govil, 86 F.4th 89 (2d Cir. 2023)",
+      "short_name": "Govil",
+      "authority_type": "circuit_opinion",
+      "jurisdiction": "US-2Cir",
+      "binding_force": "binding_in_circuit",
+      "date_decided_or_effective": "",
+      "rule_or_holding": "Second Circuit held disgorgement under § 21(d)(5)/(d)(7) requires a showing of pecuniary harm to victims.",
+      "holding_source": "secondary_confirmed",
+      "course_relation": "course_not_yet_ingested",
+      "course_explanation": "",
+      "current_validity": "negative_treatment_reported",
+      "validity_basis": "Secondary sources (Harvard Law School Forum post June 20, 2026; Cooley June 22, 2026) report that Sripetch v. SEC (U.S. June 4, 2026) rejected the Second Circuit's investor-loss requirement. Confirm with citator.",
+      "verification_method": "",
+      "verified_date": "",
+      "pinpoints": "",
+      "issue_tags": "ENF-REM",
+      "source_url": ""
+    }
+  ],
+  "documents": [
+    {
+      "id": "DEMO-DOCU-NWX-01",
+      "company_id": "DEMO-CO-NWX",
+      "doc_type": "10-Q",
+      "title": "Form 10-Q, Q3 FY2025",
+      "filing_date": "2025-11-06",
+      "period_end": "2025-09-30",
+      "accession": "DEMO-0000000000-25-000101",
+      "url": {
+        "$s": "not_applicable",
+        "note": "Fictional document"
+      },
+      "amends": "",
+      "items_reviewed": "Part I Item 2 (MD&A); Item 4",
+      "review_status": "reviewed",
+      "notes": ""
+    },
+    {
+      "id": "DEMO-DOCU-NWX-02",
+      "company_id": "DEMO-CO-NWX",
+      "doc_type": "Earnings call transcript",
+      "title": "Q4 FY2025 earnings call",
+      "filing_date": "2026-02-12",
+      "period_end": "2025-12-31",
+      "accession": "DEMO-CALL-2026-02-12",
+      "url": {
+        "$s": "not_applicable",
+        "note": "Fictional document"
+      },
+      "amends": "",
+      "items_reviewed": "CEO prepared remarks; Q&A",
+      "review_status": "reviewed",
+      "notes": ""
+    },
+    {
+      "id": "DEMO-DOCU-NWX-03",
+      "company_id": "DEMO-CO-NWX",
+      "doc_type": "10-K",
+      "title": "Form 10-K, FY2025",
+      "filing_date": "2026-02-20",
+      "period_end": "2025-12-31",
+      "accession": "DEMO-0000000000-26-000001",
+      "url": {
+        "$s": "not_applicable",
+        "note": "Fictional document"
+      },
+      "amends": "",
+      "items_reviewed": "Items 1A, 7, 8 (Note 4), 9A",
+      "review_status": "partially_reviewed",
+      "notes": ""
+    },
+    {
+      "id": "DEMO-DOCU-NWX-04",
+      "company_id": "DEMO-CO-NWX",
+      "doc_type": "Form 4",
+      "title": "Form 4 — CFO J. Doe (fictional)",
+      "filing_date": "2026-04-03",
+      "period_end": {
+        "$s": "not_applicable",
+        "note": ""
+      },
+      "accession": "DEMO-0000000000-26-000044",
+      "url": {
+        "$s": "not_applicable",
+        "note": "Fictional document"
+      },
+      "amends": "",
+      "items_reviewed": "Table I",
+      "review_status": "reviewed",
+      "notes": ""
+    },
+    {
+      "id": "DEMO-DOCU-NWX-05",
+      "company_id": "DEMO-CO-NWX",
+      "doc_type": "8-K",
+      "title": "Form 8-K Item 2.02 — Q1 FY2026 results",
+      "filing_date": "2026-04-15",
+      "period_end": "2026-03-31",
+      "accession": "DEMO-0000000000-26-000060",
+      "url": {
+        "$s": "not_applicable",
+        "note": "Fictional document"
+      },
+      "amends": "",
+      "items_reviewed": "Ex. 99.1",
+      "review_status": "reviewed",
+      "notes": ""
+    },
+    {
+      "id": "DEMO-DOCU-NWX-06",
+      "company_id": "DEMO-CO-NWX",
+      "doc_type": "Press release",
+      "title": "Response to short-seller report",
+      "filing_date": "2026-04-13",
+      "period_end": {
+        "$s": "not_applicable",
+        "note": ""
+      },
+      "accession": "DEMO-PR-2026-04-13",
+      "url": {
+        "$s": "not_applicable",
+        "note": "Fictional document"
+      },
+      "amends": "",
+      "items_reviewed": "Para. 2",
+      "review_status": "reviewed",
+      "notes": ""
+    },
+    {
+      "id": "DEMO-DOCU-CVB-01",
+      "company_id": "DEMO-CO-CVB",
+      "doc_type": "S-3",
+      "title": "Form S-3 shelf registration",
+      "filing_date": "2025-08-14",
+      "period_end": {
+        "$s": "not_applicable",
+        "note": ""
+      },
+      "accession": "DEMO-0000000000-25-000777",
+      "url": {
+        "$s": "not_applicable",
+        "note": "Fictional document"
+      },
+      "amends": "",
+      "items_reviewed": "Risk factors",
+      "review_status": "partially_reviewed",
+      "notes": ""
+    },
+    {
+      "id": "DEMO-DOCU-CVB-02",
+      "company_id": "DEMO-CO-CVB",
+      "doc_type": "424B",
+      "title": "Prospectus supplement — follow-on offering",
+      "filing_date": "2026-03-04",
+      "period_end": {
+        "$s": "not_applicable",
+        "note": ""
+      },
+      "accession": "DEMO-0000000000-26-000301",
+      "url": {
+        "$s": "not_applicable",
+        "note": "Fictional document"
+      },
+      "amends": "",
+      "items_reviewed": "Business update; risk factors",
+      "review_status": "reviewed",
+      "notes": ""
+    },
+    {
+      "id": "DEMO-DOCU-CVB-03",
+      "company_id": "DEMO-CO-CVB",
+      "doc_type": "8-K",
+      "title": "Form 8-K Item 8.01 — FDA clinical hold",
+      "filing_date": "2026-03-27",
+      "period_end": {
+        "$s": "not_applicable",
+        "note": ""
+      },
+      "accession": "DEMO-0000000000-26-000340",
+      "url": {
+        "$s": "not_applicable",
+        "note": "Fictional document"
+      },
+      "amends": "",
+      "items_reviewed": "Item 8.01",
+      "review_status": "reviewed",
+      "notes": ""
+    },
+    {
+      "id": "DEMO-DOCU-HLL-01",
+      "company_id": "DEMO-CO-HLL",
+      "doc_type": "Whitepaper / offering terms",
+      "title": "Halcyon token whitepaper v2",
+      "filing_date": "2025-06-01",
+      "period_end": {
+        "$s": "not_applicable",
+        "note": ""
+      },
+      "accession": "DEMO-WP-2",
+      "url": {
+        "$s": "not_applicable",
+        "note": "Fictional document"
+      },
+      "amends": "",
+      "items_reviewed": "Sections 3, 7",
+      "review_status": "partially_reviewed",
+      "notes": ""
+    },
+    {
+      "id": "DEMO-DOCU-HLL-02",
+      "company_id": "DEMO-CO-HLL",
+      "doc_type": "Form D",
+      "title": "Form D (searched — not found)",
+      "filing_date": {
+        "$s": "missing",
+        "note": "No Form D located on EDGAR (fictional search)"
+      },
+      "period_end": {
+        "$s": "not_applicable",
+        "note": ""
+      },
+      "accession": {
+        "$s": "missing",
+        "note": ""
+      },
+      "url": {
+        "$s": "not_applicable",
+        "note": "Fictional document"
+      },
+      "amends": "",
+      "items_reviewed": "",
+      "review_status": "not_reviewed",
+      "notes": ""
+    }
+  ],
+  "statements": [
+    {
+      "id": "DEMO-STM-0001",
+      "company_id": "DEMO-CO-NWX",
+      "document_id": "DEMO-DOCU-NWX-01",
+      "topic": "Product demand",
+      "statement_date": "2025-11-06",
+      "speaker": "Company (10-Q)",
+      "location": "Part I Item 2, p. 27",
+      "text": "Demand for our flagship sensors remained strong in the quarter.",
+      "statement_type": "historical fact",
+      "lead_flag": "none",
+      "lead_note": "",
+      "evidence_ids": []
+    },
+    {
+      "id": "DEMO-STM-0002",
+      "company_id": "DEMO-CO-NWX",
+      "document_id": "DEMO-DOCU-NWX-02",
+      "topic": "Product demand",
+      "statement_date": "2026-02-12",
+      "speaker": "CEO (fictional)",
+      "location": "Prepared remarks, 00:06:40",
+      "text": "We continue to see robust demand, and our backlog gives us excellent visibility into 2026.",
+      "statement_type": "opinion",
+      "lead_flag": "potential inconsistency",
+      "lead_note": "Backlog had fallen 31% by quarter-end (EV-NWX-0002).",
+      "evidence_ids": [
+        "DEMO-EV-NWX-0002"
+      ]
+    },
+    {
+      "id": "DEMO-STM-0003",
+      "company_id": "DEMO-CO-NWX",
+      "document_id": "DEMO-DOCU-NWX-03",
+      "topic": "Product demand",
+      "statement_date": "2026-02-20",
+      "speaker": "Company (10-K)",
+      "location": "Item 7, p. 41",
+      "text": "Customer demand for our flagship product remains robust across all regions.",
+      "statement_type": "historical fact",
+      "lead_flag": "potential half-truth / omission",
+      "lead_note": "Same filing's Note 4 shows backlog decline — materiality: magnitude 31%; flagship ~60% of revenue (fictional).",
+      "evidence_ids": [
+        "DEMO-EV-NWX-0001",
+        "DEMO-EV-NWX-0002"
+      ]
+    },
+    {
+      "id": "DEMO-STM-0004",
+      "company_id": "DEMO-CO-NWX",
+      "document_id": "DEMO-DOCU-NWX-05",
+      "topic": "Product demand",
+      "statement_date": "2026-04-15",
+      "speaker": "Company (8-K Ex. 99.1)",
+      "location": "Paras. 1–3",
+      "text": "We experienced order cancellations in two regions and are reducing full-year revenue guidance.",
+      "statement_type": "historical fact",
+      "lead_flag": "none",
+      "lead_note": "Candidate corrective disclosure.",
+      "evidence_ids": [
+        "DEMO-EV-NWX-0007"
+      ]
+    },
+    {
+      "id": "DEMO-STM-0005",
+      "company_id": "DEMO-CO-NWX",
+      "document_id": "DEMO-DOCU-NWX-03",
+      "topic": "Customer concentration risk",
+      "statement_date": "2026-02-20",
+      "speaker": "Company (10-K)",
+      "location": "Item 1A, p. 19",
+      "text": "The loss of a major customer could adversely affect our results.",
+      "statement_type": "risk factor",
+      "lead_flag": "materialized risk described as hypothetical",
+      "lead_note": "If cancellations had occurred by January (alleged), risk framed hypothetically may be a half-truth (circuit-dependent).",
+      "evidence_ids": [
+        "DEMO-EV-NWX-0004"
+      ]
+    },
+    {
+      "id": "DEMO-STM-0006",
+      "company_id": "DEMO-CO-CVB",
+      "document_id": "DEMO-DOCU-CVB-02",
+      "topic": "Phase 2 trial status",
+      "statement_date": "2026-03-04",
+      "speaker": "Company (prospectus)",
+      "location": "p. S-3",
+      "text": "Enrollment is on track for topline data in Q4 2026.",
+      "statement_type": "forward-looking",
+      "lead_flag": "potential inconsistency",
+      "lead_note": "Clinical hold notice received 2026-02-26 (EV-CVB-0002). Safe harbor unavailable for statements in connection with some offerings — verify.",
+      "evidence_ids": [
+        "DEMO-EV-CVB-0001",
+        "DEMO-EV-CVB-0002"
+      ]
+    },
+    {
+      "id": "DEMO-STM-0007",
+      "company_id": "DEMO-CO-CVB",
+      "document_id": "DEMO-DOCU-CVB-03",
+      "topic": "Phase 2 trial status",
+      "statement_date": "2026-03-27",
+      "speaker": "Company (8-K)",
+      "location": "Item 8.01",
+      "text": "The FDA has placed the Phase 2 study on clinical hold.",
+      "statement_type": "historical fact",
+      "lead_flag": "none",
+      "lead_note": "",
+      "evidence_ids": [
+        "DEMO-EV-CVB-0002"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "DEMO-EV-NWX-0001",
+      "company_id": "DEMO-CO-NWX",
+      "proposition_scope": "that_statement_was_made",
+      "url": {
+        "$s": "not_applicable",
+        "note": "Fictional document"
+      },
+      "excerpt": "remains robust across all regions",
+      "excerpt_type": "exact_quote",
+      "accessed_date": "2026-11-11",
+      "accessed_by": "claude_from_upload",
+      "strength_rationale": "",
+      "issue_ids": [
+        "DEMO-ISS-NWX-10B5"
+      ],
+      "element_ids": [
+        "DEMO-EL-NWX-10B5-1",
+        "DEMO-EL-NWX-10B5-2"
+      ],
+      "conflicts_with": [],
+      "limitations": "Establishes the statement, not its falsity.",
+      "confidence": "high",
+      "event_date": "",
+      "proposition": "The FY2025 10-K stated that demand for the flagship product 'remains robust across all regions.'",
+      "proposition_class": "verified_fact",
+      "source_title": "Form 10-K, FY2025",
+      "source_type": "sec_filing",
+      "document_id": "DEMO-DOCU-NWX-03",
+      "filing_or_document_date": "2026-02-20",
+      "pinpoint": "Item 7 (MD&A), p. 41",
+      "verification_status": "verified_from_source",
+      "supports_or_contradicts": "supports",
+      "evidentiary_strength": "strong"
+    },
+    {
+      "id": "DEMO-EV-NWX-0002",
+      "company_id": "DEMO-CO-NWX",
+      "proposition_scope": "truth_of_matter",
+      "url": {
+        "$s": "not_applicable",
+        "note": "Fictional document"
+      },
+      "excerpt": "Backlog $412.0m (Q3) → $284.3m (Q4)",
+      "excerpt_type": "data_value",
+      "accessed_date": "2026-11-11",
+      "accessed_by": "claude_from_upload",
+      "strength_rationale": "",
+      "issue_ids": [
+        "DEMO-ISS-NWX-10B5"
+      ],
+      "element_ids": [
+        "DEMO-EL-NWX-10B5-1",
+        "DEMO-EL-NWX-10B5-3"
+      ],
+      "conflicts_with": [],
+      "limitations": "Seasonality and contract timing could explain part of the decline.",
+      "confidence": "high",
+      "event_date": "2025-12-31",
+      "proposition": "Flagship backlog fell 31% from Q3 to Q4 FY2025 ($412.0m to $284.3m) per the notes to the audited statements.",
+      "proposition_class": "verified_fact",
+      "source_title": "Form 10-K, FY2025",
+      "source_type": "sec_filing",
+      "document_id": "DEMO-DOCU-NWX-03",
+      "filing_or_document_date": "2026-02-20",
+      "pinpoint": "Item 8, Note 4, p. F-18",
+      "verification_status": "verified_from_source",
+      "supports_or_contradicts": "supports",
+      "evidentiary_strength": "strong"
+    },
+    {
+      "id": "DEMO-EV-NWX-0003",
+      "company_id": "DEMO-CO-NWX",
+      "proposition_scope": "truth_of_matter",
+      "url": {
+        "$s": "not_applicable",
+        "note": "Fictional document"
+      },
+      "excerpt": "S / 120,000 sh / $48.10 wtd. avg.",
+      "excerpt_type": "data_value",
+      "accessed_date": "2026-11-11",
+      "accessed_by": "claude_from_upload",
+      "strength_rationale": "Timing suggestive; baseline trading pattern not yet compared.",
+      "issue_ids": [
+        "DEMO-ISS-NWX-10B5",
+        "DEMO-ISS-NWX-IT"
+      ],
+      "element_ids": [
+        "DEMO-EL-NWX-10B5-4",
+        "DEMO-EL-NWX-IT-2"
+      ],
+      "conflicts_with": [],
+      "limitations": "Unusualness not established.",
+      "confidence": "medium",
+      "event_date": "2026-04-01",
+      "proposition": "CFO sold 120,000 shares in open-market sales (code S) on 2026-04-01, nine trading days before the corrective release; Form 4 not marked as a Rule 10b5-1 trade.",
+      "proposition_class": "verified_fact",
+      "source_title": "Form 4 — CFO",
+      "source_type": "sec_filing",
+      "document_id": "DEMO-DOCU-NWX-04",
+      "filing_or_document_date": "2026-04-03",
+      "pinpoint": "Table I, rows 1–3",
+      "verification_status": "verified_from_source",
+      "supports_or_contradicts": "supports",
+      "evidentiary_strength": "moderate"
+    },
+    {
+      "id": "DEMO-EV-NWX-0004",
+      "company_id": "DEMO-CO-NWX",
+      "proposition_scope": "truth_of_matter",
+      "url": {
+        "$s": "not_applicable",
+        "note": "Fictional document"
+      },
+      "excerpt": "",
+      "excerpt_type": "paraphrase",
+      "accessed_date": "2026-11-11",
+      "accessed_by": "claude_from_upload",
+      "strength_rationale": "Interested party; sources unnamed.",
+      "issue_ids": [
+        "DEMO-ISS-NWX-10B5"
+      ],
+      "element_ids": [
+        "DEMO-EL-NWX-10B5-4"
+      ],
+      "conflicts_with": [
+        "DEMO-EV-NWX-0005"
+      ],
+      "limitations": "",
+      "confidence": "low",
+      "event_date": "",
+      "proposition": "A short-seller report alleged management knew of order cancellations from the two largest customers by January 2026.",
+      "proposition_class": "third_party_allegation",
+      "source_title": "Short-seller report (fictional)",
+      "source_type": "analyst_or_short_report",
+      "filing_or_document_date": "2026-04-10",
+      "pinpoint": "pp. 3–5",
+      "verification_status": "secondary_report_only",
+      "supports_or_contradicts": "supports",
+      "evidentiary_strength": "weak"
+    },
+    {
+      "id": "DEMO-EV-NWX-0005",
+      "company_id": "DEMO-CO-NWX",
+      "proposition_scope": "that_statement_was_made",
+      "url": {
+        "$s": "not_applicable",
+        "note": "Fictional document"
+      },
+      "excerpt": "",
+      "excerpt_type": "paraphrase",
+      "accessed_date": "2026-11-11",
+      "accessed_by": "claude_from_upload",
+      "strength_rationale": "",
+      "issue_ids": [
+        "DEMO-ISS-NWX-10B5"
+      ],
+      "element_ids": [
+        "DEMO-EL-NWX-10B5-4"
+      ],
+      "conflicts_with": [
+        "DEMO-EV-NWX-0004"
+      ],
+      "limitations": "",
+      "confidence": "medium",
+      "event_date": "",
+      "proposition": "The company publicly denied that any top-ten customer cancelled orders before March 2026.",
+      "proposition_class": "verified_fact",
+      "source_title": "Press release (fictional)",
+      "source_type": "company_press_release",
+      "document_id": "DEMO-DOCU-NWX-06",
+      "filing_or_document_date": "2026-04-13",
+      "pinpoint": "Para. 2",
+      "verification_status": "verified_from_source",
+      "supports_or_contradicts": "contradicts",
+      "evidentiary_strength": "moderate"
+    },
+    {
+      "id": "DEMO-EV-NWX-0006",
+      "company_id": "DEMO-CO-NWX",
+      "proposition_scope": "truth_of_matter",
+      "url": "",
+      "excerpt": "",
+      "excerpt_type": "none",
+      "accessed_date": "",
+      "accessed_by": "",
+      "strength_rationale": "",
+      "issue_ids": [
+        "DEMO-ISS-NWX-10B5"
+      ],
+      "element_ids": [
+        "DEMO-EL-NWX-10B5-1"
+      ],
+      "conflicts_with": [],
+      "limitations": "Timing of management knowledge not established.",
+      "confidence": "low",
+      "event_date": "",
+      "proposition": "Hypothesis: the 'robust demand' statement was a half-truth because management had backlog data showing a material decline when the 10-K was filed.",
+      "proposition_class": "analytical_hypothesis",
+      "source_title": "System-generated analysis",
+      "source_type": "other",
+      "pinpoint": "",
+      "verification_status": "not_accessed",
+      "supports_or_contradicts": "supports",
+      "evidentiary_strength": "unassessed"
+    },
+    {
+      "id": "DEMO-EV-NWX-0007",
+      "company_id": "DEMO-CO-NWX",
+      "proposition_scope": "truth_of_matter",
+      "url": {
+        "$s": "not_applicable",
+        "note": "Fictional document"
+      },
+      "excerpt": "",
+      "excerpt_type": "paraphrase",
+      "accessed_date": "2026-11-11",
+      "accessed_by": "claude_from_upload",
+      "strength_rationale": "",
+      "issue_ids": [
+        "DEMO-ISS-NWX-10B5"
+      ],
+      "element_ids": [
+        "DEMO-EL-NWX-10B5-8"
+      ],
+      "conflicts_with": [],
+      "limitations": "",
+      "confidence": "high",
+      "event_date": "2026-04-15",
+      "proposition": "Q1 FY2026 release disclosed order cancellations in two regions and cut full-year revenue guidance by 18%.",
+      "proposition_class": "verified_fact",
+      "source_title": "Form 8-K Ex. 99.1",
+      "source_type": "sec_filing",
+      "document_id": "DEMO-DOCU-NWX-05",
+      "filing_or_document_date": "2026-04-15",
+      "pinpoint": "Ex. 99.1, paras. 1–3",
+      "verification_status": "verified_from_source",
+      "supports_or_contradicts": "supports",
+      "evidentiary_strength": "strong"
+    },
+    {
+      "id": "DEMO-EV-NWX-0008",
+      "company_id": "DEMO-CO-NWX",
+      "proposition_scope": "truth_of_matter",
+      "url": {
+        "$s": "not_applicable",
+        "note": "Fictional document"
+      },
+      "excerpt": "",
+      "excerpt_type": "paraphrase",
+      "accessed_date": "2026-11-11",
+      "accessed_by": "claude_from_upload",
+      "strength_rationale": "Undermines attribution of the whole decline to the corrective information.",
+      "issue_ids": [
+        "DEMO-ISS-NWX-10B5"
+      ],
+      "element_ids": [
+        "DEMO-EL-NWX-10B5-8"
+      ],
+      "conflicts_with": [],
+      "limitations": "",
+      "confidence": "high",
+      "event_date": "",
+      "proposition": "The same release announced a CEO transition and a restructuring charge — potentially confounding information on the event day.",
+      "proposition_class": "verified_fact",
+      "source_title": "Form 8-K Ex. 99.1",
+      "source_type": "sec_filing",
+      "document_id": "DEMO-DOCU-NWX-05",
+      "filing_or_document_date": "2026-04-15",
+      "pinpoint": "Ex. 99.1, paras. 6–7",
+      "verification_status": "verified_from_source",
+      "supports_or_contradicts": "contradicts",
+      "evidentiary_strength": "strong"
+    },
+    {
+      "id": "DEMO-EV-NWX-0009",
+      "company_id": "DEMO-CO-NWX",
+      "proposition_scope": "truth_of_matter",
+      "url": "",
+      "excerpt": "",
+      "excerpt_type": "paraphrase",
+      "accessed_date": "2026-11-11",
+      "accessed_by": "claude_from_upload",
+      "strength_rationale": "",
+      "issue_ids": [
+        "DEMO-ISS-NWX-10B5"
+      ],
+      "element_ids": [
+        "DEMO-EL-NWX-10B5-7",
+        "DEMO-EL-NWX-10B5-8"
+      ],
+      "conflicts_with": [],
+      "limitations": "Synthetic data; no event study performed beyond market adjustment.",
+      "confidence": "medium",
+      "event_date": "",
+      "proposition": "Synthetic demo price series shows a −14% market-adjusted move on 2026-04-15 (fictional).",
+      "proposition_class": "supported_inference",
+      "source_title": "DEMO synthetic market data",
+      "source_type": "market_data",
+      "pinpoint": "Market observations 2026-04-15",
+      "verification_status": "partially_accessed",
+      "supports_or_contradicts": "supports",
+      "evidentiary_strength": "moderate"
+    },
+    {
+      "id": "DEMO-EV-CVB-0001",
+      "company_id": "DEMO-CO-CVB",
+      "proposition_scope": "that_statement_was_made",
+      "url": {
+        "$s": "not_applicable",
+        "note": "Fictional document"
+      },
+      "excerpt": "on track for topline data in Q4 2026",
+      "excerpt_type": "exact_quote",
+      "accessed_date": "2026-11-11",
+      "accessed_by": "claude_from_upload",
+      "strength_rationale": "",
+      "issue_ids": [
+        "DEMO-ISS-CVB-S11"
+      ],
+      "element_ids": [
+        "DEMO-EL-CVB-S11-1"
+      ],
+      "conflicts_with": [],
+      "limitations": "",
+      "confidence": "high",
+      "event_date": "",
+      "proposition": "The March 2026 prospectus supplement described Phase 2 enrollment as 'on track for topline data in Q4 2026.'",
+      "proposition_class": "verified_fact",
+      "source_title": "424B prospectus supplement",
+      "source_type": "sec_filing",
+      "document_id": "DEMO-DOCU-CVB-02",
+      "filing_or_document_date": "2026-03-04",
+      "pinpoint": "Prospectus Summary — Recent Developments, p. S-3",
+      "verification_status": "verified_from_source",
+      "supports_or_contradicts": "supports",
+      "evidentiary_strength": "strong"
+    },
+    {
+      "id": "DEMO-EV-CVB-0002",
+      "company_id": "DEMO-CO-CVB",
+      "proposition_scope": "truth_of_matter",
+      "url": {
+        "$s": "not_applicable",
+        "note": "Fictional document"
+      },
+      "excerpt": "",
+      "excerpt_type": "paraphrase",
+      "accessed_date": "2026-11-11",
+      "accessed_by": "claude_from_upload",
+      "strength_rationale": "",
+      "issue_ids": [
+        "DEMO-ISS-CVB-S11"
+      ],
+      "element_ids": [
+        "DEMO-EL-CVB-S11-1",
+        "DEMO-EL-CVB-S11-2"
+      ],
+      "conflicts_with": [],
+      "limitations": "",
+      "confidence": "high",
+      "event_date": "2026-02-26",
+      "proposition": "The company disclosed on 2026-03-27 that the FDA had placed the Phase 2 trial on clinical hold, with notice received 2026-02-26.",
+      "proposition_class": "verified_fact",
+      "source_title": "Form 8-K Item 8.01",
+      "source_type": "sec_filing",
+      "document_id": "DEMO-DOCU-CVB-03",
+      "filing_or_document_date": "2026-03-27",
+      "pinpoint": "Item 8.01, para. 1",
+      "verification_status": "verified_from_source",
+      "supports_or_contradicts": "supports",
+      "evidentiary_strength": "strong"
+    },
+    {
+      "id": "DEMO-EV-CVB-0003",
+      "company_id": "DEMO-CO-CVB",
+      "proposition_scope": "truth_of_matter",
+      "url": "",
+      "excerpt": "",
+      "excerpt_type": "none",
+      "accessed_date": "",
+      "accessed_by": "",
+      "strength_rationale": "",
+      "issue_ids": [
+        "DEMO-ISS-CVB-S11"
+      ],
+      "element_ids": [
+        "DEMO-EL-CVB-S11-4"
+      ],
+      "conflicts_with": [],
+      "limitations": "",
+      "confidence": "low",
+      "event_date": "",
+      "proposition": "Whether underwriters' diligence included FDA correspondence is unknown.",
+      "proposition_class": "unknown",
+      "source_title": "Research gap",
+      "source_type": "other",
+      "pinpoint": "",
+      "verification_status": "not_accessed",
+      "supports_or_contradicts": "neutral",
+      "evidentiary_strength": "unassessed"
+    },
+    {
+      "id": "DEMO-EV-HLL-0001",
+      "company_id": "DEMO-CO-HLL",
+      "proposition_scope": "that_statement_was_made",
+      "url": {
+        "$s": "not_applicable",
+        "note": "Fictional document"
+      },
+      "excerpt": "continued development will drive token value",
+      "excerpt_type": "exact_quote",
+      "accessed_date": "2026-11-11",
+      "accessed_by": "claude_from_upload",
+      "strength_rationale": "",
+      "issue_ids": [
+        "DEMO-ISS-HLL-S5"
+      ],
+      "element_ids": [
+        "DEMO-EL-HLL-S5-1"
+      ],
+      "conflicts_with": [],
+      "limitations": "",
+      "confidence": "medium",
+      "event_date": "",
+      "proposition": "The whitepaper stated that the team's 'continued development will drive token value' and described a treasury buyback program.",
+      "proposition_class": "verified_fact",
+      "source_title": "Token whitepaper v2",
+      "source_type": "company_website",
+      "document_id": "DEMO-DOCU-HLL-01",
+      "filing_or_document_date": "2025-06-01",
+      "pinpoint": "§7, p. 14",
+      "verification_status": "verified_from_source",
+      "supports_or_contradicts": "supports",
+      "evidentiary_strength": "moderate"
+    },
+    {
+      "id": "DEMO-EV-HLL-0002",
+      "company_id": "DEMO-CO-HLL",
+      "proposition_scope": "truth_of_matter",
+      "url": {
+        "$s": "not_applicable",
+        "note": "Fictional document"
+      },
+      "excerpt": "",
+      "excerpt_type": "paraphrase",
+      "accessed_date": "2026-11-11",
+      "accessed_by": "claude_from_upload",
+      "strength_rationale": "Absence of Form D is a red flag but does not by itself defeat an exemption.",
+      "issue_ids": [
+        "DEMO-ISS-HLL-S5"
+      ],
+      "element_ids": [
+        "DEMO-EL-HLL-S5-5"
+      ],
+      "conflicts_with": [],
+      "limitations": "",
+      "confidence": "medium",
+      "event_date": "",
+      "proposition": "No Form D filing for the 2025 pre-sale was located (fictional search).",
+      "proposition_class": "verified_fact",
+      "source_title": "EDGAR search (fictional)",
+      "source_type": "sec_filing",
+      "document_id": "DEMO-DOCU-HLL-02",
+      "filing_or_document_date": {
+        "$s": "not_applicable",
+        "note": ""
+      },
+      "pinpoint": "Company and full-text search, 2026-11-11",
+      "verification_status": "verified_from_source",
+      "supports_or_contradicts": "supports",
+      "evidentiary_strength": "moderate"
+    }
+  ],
+  "issues": [
+    {
+      "id": "DEMO-ISS-NWX-10B5",
+      "company_id": "DEMO-CO-NWX",
+      "title": "Rule 10b-5: 'robust demand' statements vs. declining backlog",
+      "template": "10B5",
+      "doctrine_id": "DEMO-DOC-0001",
+      "reach": "Listed common stock; statements in periodic reports and calls.",
+      "controlling_perspective": "Plaintiff",
+      "private_right": "Implied",
+      "severity": "High",
+      "severity_rationale": "Multiple statements over two quarters; 18% guidance cut.",
+      "exposure": "Reasonably possible",
+      "conclusion": "Falsity and materiality reasonably supported; scienter contested; loss causation confounded by same-day CEO transition.",
+      "conclusion_confidence": "Medium",
+      "priority": 1,
+      "authority_ids": [
+        "DEMO-AUTH-BASIC",
+        "DEMO-AUTH-TELLABS",
+        "DEMO-AUTH-DURA",
+        "DEMO-AUTH-MACQUARIE"
+      ],
+      "open_questions": "When did management receive Q4 backlog data? CFO trading baseline?"
+    },
+    {
+      "id": "DEMO-ISS-NWX-IT",
+      "company_id": "DEMO-CO-NWX",
+      "title": "Insider trading: CFO sales before corrective release",
+      "template": "IT",
+      "doctrine_id": "DEMO-DOC-0007",
+      "reach": "",
+      "controlling_perspective": "Regulator",
+      "private_right": "Limited",
+      "severity": "Moderate",
+      "severity_rationale": "",
+      "exposure": "Possible",
+      "conclusion": "",
+      "conclusion_confidence": "Unknown",
+      "priority": 2,
+      "authority_ids": [
+        "DEMO-AUTH-CHIARELLA",
+        "DEMO-AUTH-DIRKS"
+      ],
+      "open_questions": "Was the CFO aware of cancellations on 2026-04-01?"
+    },
+    {
+      "id": "DEMO-ISS-NWX-CP",
+      "company_id": "DEMO-CO-NWX",
+      "title": "§20(a) control-person liability: CEO and CFO",
+      "template": "CP",
+      "doctrine_id": "DEMO-DOC-0008",
+      "reach": "",
+      "controlling_perspective": "Plaintiff",
+      "private_right": "Express",
+      "severity": "Moderate",
+      "severity_rationale": "",
+      "exposure": "Unknown",
+      "conclusion": "",
+      "conclusion_confidence": "Unknown",
+      "priority": 3,
+      "authority_ids": [],
+      "open_questions": ""
+    },
+    {
+      "id": "DEMO-ISS-CVB-S11",
+      "company_id": "DEMO-CO-CVB",
+      "title": "§11: 'on track' statement in prospectus while clinical hold notice pending",
+      "template": "S11",
+      "doctrine_id": "DEMO-DOC-0005",
+      "reach": "Follow-on offering under S-3; statements in the registration statement as of the takedown.",
+      "controlling_perspective": "Plaintiff",
+      "private_right": "Express",
+      "severity": "High",
+      "severity_rationale": "",
+      "exposure": "Reasonably possible",
+      "conclusion": "Strong falsity and materiality evidence; traceability likely satisfied for offering purchasers.",
+      "conclusion_confidence": "Medium",
+      "priority": 4,
+      "authority_ids": [
+        "DEMO-AUTH-OMNICARE",
+        "DEMO-AUTH-SLACK"
+      ],
+      "open_questions": ""
+    },
+    {
+      "id": "DEMO-ISS-HLL-S5",
+      "company_id": "DEMO-CO-HLL",
+      "title": "§5 / §12(a)(1): unregistered token pre-sale",
+      "template": "S5",
+      "doctrine_id": "DEMO-DOC-0006",
+      "reach": "",
+      "controlling_perspective": "Plaintiff",
+      "private_right": "Express",
+      "severity": "Moderate",
+      "severity_rationale": "",
+      "exposure": "Possible",
+      "conclusion": "",
+      "conclusion_confidence": "Unknown",
+      "priority": 5,
+      "authority_ids": [
+        "DEMO-AUTH-HOWEY",
+        "DEMO-AUTH-REL-33-11412"
+      ],
+      "open_questions": "Does the 2026 taxonomy treat the token as a digital commodity? Pre-sale purchasers' expectations?"
+    },
+    {
+      "id": "DEMO-ISS-BRC-CMP",
+      "company_id": "DEMO-CO-BRC",
+      "title": "Adviser conflict disclosure (Form ADV Part 2A)",
+      "template": "COMPLIANCE",
+      "doctrine_id": "",
+      "reach": "",
+      "controlling_perspective": "Defense / in-house",
+      "private_right": "None (SEC/DOJ only)",
+      "severity": "Unknown",
+      "severity_rationale": "",
+      "exposure": "Unknown",
+      "conclusion": "",
+      "conclusion_confidence": "Unknown",
+      "priority": 6,
+      "authority_ids": [],
+      "open_questions": ""
+    }
+  ],
+  "elements": [
+    {
+      "id": "DEMO-EL-NWX-10B5-1",
+      "issue_id": "DEMO-ISS-NWX-10B5",
+      "code": "10B5-E1",
+      "label": "Material misrepresentation, half-truth, or scheme",
+      "essential": true,
+      "status": "Supported by verified evidence",
+      "evidence_ids": [
+        "DEMO-EV-NWX-0001",
+        "DEMO-EV-NWX-0002",
+        "DEMO-EV-NWX-0006"
+      ],
+      "analysis": "",
+      "counter": ""
+    },
+    {
+      "id": "DEMO-EL-NWX-10B5-2",
+      "issue_id": "DEMO-ISS-NWX-10B5",
+      "code": "10B5-E1a",
+      "label": "Defendant 'made' the statement (Janus)",
+      "essential": true,
+      "status": "Supported by verified evidence",
+      "evidence_ids": [
+        "DEMO-EV-NWX-0001"
+      ],
+      "analysis": "",
+      "counter": ""
+    },
+    {
+      "id": "DEMO-EL-NWX-10B5-3",
+      "issue_id": "DEMO-ISS-NWX-10B5",
+      "code": "10B5-E2",
+      "label": "Materiality",
+      "essential": true,
+      "status": "Supported by reasonable inference",
+      "evidence_ids": [
+        "DEMO-EV-NWX-0002"
+      ],
+      "analysis": "",
+      "counter": ""
+    },
+    {
+      "id": "DEMO-EL-NWX-10B5-4",
+      "issue_id": "DEMO-ISS-NWX-10B5",
+      "code": "10B5-E3",
+      "label": "Scienter (strong inference — Tellabs)",
+      "essential": true,
+      "status": "Contested",
+      "evidence_ids": [
+        "DEMO-EV-NWX-0003",
+        "DEMO-EV-NWX-0004",
+        "DEMO-EV-NWX-0005"
+      ],
+      "analysis": "Backlog data in the same filing plus CFO sales support an inference of recklessness.",
+      "counter": "Company denial; no internal documents; CFO trading baseline unknown (Tellabs holistic review)."
+    },
+    {
+      "id": "DEMO-EL-NWX-10B5-5",
+      "issue_id": "DEMO-ISS-NWX-10B5",
+      "code": "10B5-E4",
+      "label": "In connection with purchase or sale",
+      "essential": true,
+      "status": "Supported by verified evidence",
+      "evidence_ids": [
+        "DEMO-EV-NWX-0001"
+      ],
+      "analysis": "",
+      "counter": ""
+    },
+    {
+      "id": "DEMO-EL-NWX-10B5-6",
+      "issue_id": "DEMO-ISS-NWX-10B5",
+      "code": "10B5-E5",
+      "label": "Reliance / transaction causation",
+      "essential": true,
+      "status": "Supported by reasonable inference",
+      "evidence_ids": [],
+      "analysis": "",
+      "counter": ""
+    },
+    {
+      "id": "DEMO-EL-NWX-10B5-7",
+      "issue_id": "DEMO-ISS-NWX-10B5",
+      "code": "10B5-E6",
+      "label": "Economic loss",
+      "essential": true,
+      "status": "Supported by verified evidence",
+      "evidence_ids": [
+        "DEMO-EV-NWX-0009"
+      ],
+      "analysis": "",
+      "counter": ""
+    },
+    {
+      "id": "DEMO-EL-NWX-10B5-8",
+      "issue_id": "DEMO-ISS-NWX-10B5",
+      "code": "10B5-E7",
+      "label": "Loss causation (Dura)",
+      "essential": true,
+      "status": "Contested",
+      "evidence_ids": [
+        "DEMO-EV-NWX-0007",
+        "DEMO-EV-NWX-0008",
+        "DEMO-EV-NWX-0009"
+      ],
+      "analysis": "−14% market-adjusted move on corrective release (synthetic).",
+      "counter": "Same-day CEO transition and restructuring charge confound attribution (Dura)."
+    },
+    {
+      "id": "DEMO-EL-NWX-IT-1",
+      "issue_id": "DEMO-ISS-NWX-IT",
+      "code": "IT-E1",
+      "label": "Material nonpublic information",
+      "essential": true,
+      "status": "Contested",
+      "evidence_ids": [],
+      "analysis": "",
+      "counter": ""
+    },
+    {
+      "id": "DEMO-EL-NWX-IT-2",
+      "issue_id": "DEMO-ISS-NWX-IT",
+      "code": "IT-E2",
+      "label": "Traded while aware of MNPI",
+      "essential": true,
+      "status": "Supported by verified evidence",
+      "evidence_ids": [
+        "DEMO-EV-NWX-0003"
+      ],
+      "analysis": "",
+      "counter": ""
+    },
+    {
+      "id": "DEMO-EL-NWX-IT-3",
+      "issue_id": "DEMO-ISS-NWX-IT",
+      "code": "IT-E3",
+      "label": "Duty (classical / misappropriation / tipper benefit)",
+      "essential": true,
+      "status": "Supported by verified evidence",
+      "evidence_ids": [
+        "DEMO-EV-NWX-0003"
+      ],
+      "analysis": "",
+      "counter": ""
+    },
+    {
+      "id": "DEMO-EL-NWX-IT-4",
+      "issue_id": "DEMO-ISS-NWX-IT",
+      "code": "IT-E4",
+      "label": "Scienter",
+      "essential": true,
+      "status": "Not established from available sources",
+      "evidence_ids": [],
+      "analysis": "",
+      "counter": ""
+    },
+    {
+      "id": "DEMO-EL-NWX-CP-1",
+      "issue_id": "DEMO-ISS-NWX-CP",
+      "code": "CP-E1",
+      "label": "Primary violation",
+      "essential": true,
+      "status": "Contested",
+      "evidence_ids": [],
+      "analysis": "",
+      "counter": ""
+    },
+    {
+      "id": "DEMO-EL-NWX-CP-2",
+      "issue_id": "DEMO-ISS-NWX-CP",
+      "code": "CP-E2",
+      "label": "Control",
+      "essential": true,
+      "status": "Supported by verified evidence",
+      "evidence_ids": [],
+      "analysis": "",
+      "counter": ""
+    },
+    {
+      "id": "DEMO-EL-NWX-CP-3",
+      "issue_id": "DEMO-ISS-NWX-CP",
+      "code": "CP-E3",
+      "label": "Culpable participation (circuit-dependent)",
+      "essential": false,
+      "status": "Unassessed",
+      "evidence_ids": [],
+      "analysis": "",
+      "counter": ""
+    },
+    {
+      "id": "DEMO-EL-CVB-S11-1",
+      "issue_id": "DEMO-ISS-CVB-S11",
+      "code": "S11-E1",
+      "label": "Untrue statement / omission in registration statement at effectiveness",
+      "essential": true,
+      "status": "Supported by verified evidence",
+      "evidence_ids": [
+        "DEMO-EV-CVB-0001",
+        "DEMO-EV-CVB-0002"
+      ],
+      "analysis": "",
+      "counter": ""
+    },
+    {
+      "id": "DEMO-EL-CVB-S11-2",
+      "issue_id": "DEMO-ISS-CVB-S11",
+      "code": "S11-E2",
+      "label": "Materiality",
+      "essential": true,
+      "status": "Supported by verified evidence",
+      "evidence_ids": [
+        "DEMO-EV-CVB-0002"
+      ],
+      "analysis": "",
+      "counter": ""
+    },
+    {
+      "id": "DEMO-EL-CVB-S11-3",
+      "issue_id": "DEMO-ISS-CVB-S11",
+      "code": "S11-E3",
+      "label": "Securities traceable to the registration statement (Slack)",
+      "essential": true,
+      "status": "Supported by reasonable inference",
+      "evidence_ids": [],
+      "analysis": "",
+      "counter": ""
+    },
+    {
+      "id": "DEMO-EL-CVB-S11-4",
+      "issue_id": "DEMO-ISS-CVB-S11",
+      "code": "S11-E4",
+      "label": "Defendant in a statutory category",
+      "essential": true,
+      "status": "Not established from available sources",
+      "evidence_ids": [
+        "DEMO-EV-CVB-0003"
+      ],
+      "analysis": "",
+      "counter": ""
+    },
+    {
+      "id": "DEMO-EL-HLL-S5-1",
+      "issue_id": "DEMO-ISS-HLL-S5",
+      "code": "S5-SEC",
+      "label": "Instrument is a security (Howey / Reves / Landreth)",
+      "essential": true,
+      "status": "Contested",
+      "evidence_ids": [
+        "DEMO-EV-HLL-0001"
+      ],
+      "analysis": "",
+      "counter": ""
+    },
+    {
+      "id": "DEMO-EL-HLL-S5-2",
+      "issue_id": "DEMO-ISS-HLL-S5",
+      "code": "S5-E1",
+      "label": "No registration statement in effect / filed",
+      "essential": true,
+      "status": "Supported by verified evidence",
+      "evidence_ids": [],
+      "analysis": "",
+      "counter": ""
+    },
+    {
+      "id": "DEMO-EL-HLL-S5-3",
+      "issue_id": "DEMO-ISS-HLL-S5",
+      "code": "S5-E2",
+      "label": "Defendant offered or sold",
+      "essential": true,
+      "status": "Supported by verified evidence",
+      "evidence_ids": [],
+      "analysis": "",
+      "counter": ""
+    },
+    {
+      "id": "DEMO-EL-HLL-S5-4",
+      "issue_id": "DEMO-ISS-HLL-S5",
+      "code": "S5-E3",
+      "label": "Interstate commerce or mails",
+      "essential": true,
+      "status": "Unassessed",
+      "evidence_ids": [],
+      "analysis": "",
+      "counter": ""
+    },
+    {
+      "id": "DEMO-EL-HLL-S5-5",
+      "issue_id": "DEMO-ISS-HLL-S5",
+      "code": "S5-DEF",
+      "label": "No exemption available (defendant's burden)",
+      "essential": true,
+      "status": "Contested",
+      "evidence_ids": [
+        "DEMO-EV-HLL-0002"
+      ],
+      "analysis": "",
+      "counter": ""
+    },
+    {
+      "id": "DEMO-EL-BRC-CMP-1",
+      "issue_id": "DEMO-ISS-BRC-CMP",
+      "code": "CMP-E1",
+      "label": "Applicable requirement (rule / form item)",
+      "essential": true,
+      "status": "Unassessed",
+      "evidence_ids": [],
+      "analysis": "",
+      "counter": ""
+    },
+    {
+      "id": "DEMO-EL-BRC-CMP-2",
+      "issue_id": "DEMO-ISS-BRC-CMP",
+      "code": "CMP-E2",
+      "label": "Facts showing non-compliance",
+      "essential": true,
+      "status": "Unassessed",
+      "evidence_ids": [],
+      "analysis": "",
+      "counter": ""
+    },
+    {
+      "id": "DEMO-EL-BRC-CMP-3",
+      "issue_id": "DEMO-ISS-BRC-CMP",
+      "code": "CMP-E3",
+      "label": "Remediation status",
+      "essential": false,
+      "status": "Unassessed",
+      "evidence_ids": [],
+      "analysis": "",
+      "counter": ""
+    }
+  ],
+  "claims": [
+    {
+      "id": "DEMO-CLM-0001",
+      "issue_id": "DEMO-ISS-NWX-10B5",
+      "kind": "claim",
+      "provision": "Exchange Act §10(b) / Rule 10b-5(b) — half-truth",
+      "private_right": "Implied",
+      "forum": "Federal district court",
+      "pleading_standard": "Rule 9(b) + PSLRA",
+      "plaintiff_arguments": "Specific, verifiable demand statement contradicted by same-filing backlog data; repeated across call and 10-K.",
+      "defense_arguments": "Puffery ('robust'); backlog disclosed in notes (truth-on-the-market within the same filing).",
+      "sec_considerations": "SEC could also pursue negligence-based §17(a)(2) only if an offering occurred — none in window.",
+      "scienter_analysis": "Motive: CFO sales (not 10b5-1). Opportunity: certifications. Competing inference: seasonal backlog.",
+      "causation_analysis": "Corrective disclosure 2026-04-15 pre-open; confounded by CEO transition. Need disaggregation.",
+      "pleading_risk": "Moderate",
+      "exposure": "Reasonably possible",
+      "unresolved": "Internal knowledge timing; CFO trading baseline.",
+      "evidence_ids": [
+        "DEMO-EV-NWX-0001",
+        "DEMO-EV-NWX-0002",
+        "DEMO-EV-NWX-0003"
+      ]
+    },
+    {
+      "id": "DEMO-CLM-0002",
+      "issue_id": "DEMO-ISS-NWX-10B5",
+      "kind": "defense",
+      "provision": "Puffery / immaterial optimism",
+      "private_right": "Unknown",
+      "forum": "",
+      "pleading_standard": "",
+      "plaintiff_arguments": "Paired with 'across all regions' — a verifiable factual claim.",
+      "defense_arguments": "'Robust' is a generalized statement of optimism.",
+      "sec_considerations": "",
+      "scienter_analysis": "",
+      "causation_analysis": "",
+      "pleading_risk": "Moderate",
+      "exposure": "Unknown",
+      "unresolved": "",
+      "evidence_ids": [
+        "DEMO-EV-NWX-0001"
+      ]
+    },
+    {
+      "id": "DEMO-CLM-0003",
+      "issue_id": "DEMO-ISS-NWX-10B5",
+      "kind": "defense",
+      "provision": "No loss causation (confounding information)",
+      "private_right": "Unknown",
+      "forum": "",
+      "pleading_standard": "",
+      "plaintiff_arguments": "",
+      "defense_arguments": "CEO transition and restructuring explain the decline.",
+      "sec_considerations": "",
+      "scienter_analysis": "",
+      "causation_analysis": "Market-adjusted move cannot be split without intraday data or analyst commentary.",
+      "pleading_risk": "Unknown",
+      "exposure": "Unknown",
+      "unresolved": "",
+      "evidence_ids": [
+        "DEMO-EV-NWX-0008"
+      ]
+    },
+    {
+      "id": "DEMO-CLM-0004",
+      "issue_id": "DEMO-ISS-NWX-IT",
+      "kind": "enforcement_theory",
+      "provision": "Classical insider trading — SEC §21A penalties",
+      "private_right": "Limited",
+      "forum": "Federal district court (Jarkesy)",
+      "pleading_standard": "Preponderance",
+      "plaintiff_arguments": "",
+      "defense_arguments": "",
+      "sec_considerations": "Penalty up to 3× profit avoided; disgorgement (Sripetch).",
+      "scienter_analysis": "",
+      "causation_analysis": "",
+      "pleading_risk": "Unknown",
+      "exposure": "Unknown",
+      "unresolved": "Awareness of MNPI on trade date.",
+      "evidence_ids": []
+    },
+    {
+      "id": "DEMO-CLM-0005",
+      "issue_id": "DEMO-ISS-CVB-S11",
+      "kind": "claim",
+      "provision": "Securities Act §11",
+      "private_right": "Express",
+      "forum": "State or federal court (Cyan)",
+      "pleading_standard": "Rule 8 (Rule 9(b) if sounding in fraud)",
+      "plaintiff_arguments": "Statement was untrue when the supplement became part of the registration statement; clinical hold notice received 2026-02-26.",
+      "defense_arguments": "Opinion (Omnicare); underwriters' due diligence.",
+      "sec_considerations": "",
+      "scienter_analysis": "",
+      "causation_analysis": "§11(e) negative causation is the defendant's burden.",
+      "pleading_risk": "Low",
+      "exposure": "Reasonably possible",
+      "unresolved": "",
+      "evidence_ids": [
+        "DEMO-EV-CVB-0001",
+        "DEMO-EV-CVB-0002"
+      ]
+    },
+    {
+      "id": "DEMO-CLM-0006",
+      "issue_id": "DEMO-ISS-HLL-S5",
+      "kind": "defense",
+      "provision": "Token is a non-security digital commodity under the 2026 SEC taxonomy",
+      "private_right": "Unknown",
+      "forum": "",
+      "pleading_standard": "",
+      "plaintiff_arguments": "Pre-sale marketing emphasized team efforts and price; Howey governs.",
+      "defense_arguments": "Agency interpretation; network functionality.",
+      "sec_considerations": "",
+      "scienter_analysis": "",
+      "causation_analysis": "",
+      "pleading_risk": "High",
+      "exposure": "Unknown",
+      "unresolved": "",
+      "evidence_ids": []
+    }
+  ],
+  "fin_obs": [
+    {
+      "id": "DEMO-FIN-0001",
+      "company_id": "DEMO-CO-NWX",
+      "metric": "Revenue",
+      "period_end": "2025-03-31",
+      "period_label": "Q1 FY2025",
+      "value": 198.4,
+      "unit": "USD millions",
+      "evidence_id": "",
+      "data_status": "demo_fictional",
+      "note": ""
+    },
+    {
+      "id": "DEMO-FIN-0002",
+      "company_id": "DEMO-CO-NWX",
+      "metric": "Revenue",
+      "period_end": "2025-06-30",
+      "period_label": "Q2 FY2025",
+      "value": 205.1,
+      "unit": "USD millions",
+      "evidence_id": "",
+      "data_status": "demo_fictional",
+      "note": ""
+    },
+    {
+      "id": "DEMO-FIN-0003",
+      "company_id": "DEMO-CO-NWX",
+      "metric": "Revenue",
+      "period_end": "2025-09-30",
+      "period_label": "Q3 FY2025",
+      "value": 211.7,
+      "unit": "USD millions",
+      "evidence_id": "",
+      "data_status": "demo_fictional",
+      "note": ""
+    },
+    {
+      "id": "DEMO-FIN-0004",
+      "company_id": "DEMO-CO-NWX",
+      "metric": "Revenue",
+      "period_end": "2025-12-31",
+      "period_label": "Q4 FY2025",
+      "value": 214.9,
+      "unit": "USD millions",
+      "evidence_id": "",
+      "data_status": "demo_fictional",
+      "note": ""
+    },
+    {
+      "id": "DEMO-FIN-0005",
+      "company_id": "DEMO-CO-NWX",
+      "metric": "Revenue",
+      "period_end": "2026-03-31",
+      "period_label": "Q1 FY2026",
+      "value": 176.2,
+      "unit": "USD millions",
+      "evidence_id": "",
+      "data_status": "demo_fictional",
+      "note": ""
+    },
+    {
+      "id": "DEMO-FIN-0006",
+      "company_id": "DEMO-CO-NWX",
+      "metric": "Backlog",
+      "period_end": "2025-03-31",
+      "period_label": "Q1 FY2025",
+      "value": 398,
+      "unit": "USD millions",
+      "evidence_id": "",
+      "data_status": "demo_fictional",
+      "note": ""
+    },
+    {
+      "id": "DEMO-FIN-0007",
+      "company_id": "DEMO-CO-NWX",
+      "metric": "Backlog",
+      "period_end": "2025-06-30",
+      "period_label": "Q2 FY2025",
+      "value": 405.6,
+      "unit": "USD millions",
+      "evidence_id": "",
+      "data_status": "demo_fictional",
+      "note": ""
+    },
+    {
+      "id": "DEMO-FIN-0008",
+      "company_id": "DEMO-CO-NWX",
+      "metric": "Backlog",
+      "period_end": "2025-09-30",
+      "period_label": "Q3 FY2025",
+      "value": 412,
+      "unit": "USD millions",
+      "evidence_id": "",
+      "data_status": "demo_fictional",
+      "note": ""
+    },
+    {
+      "id": "DEMO-FIN-0009",
+      "company_id": "DEMO-CO-NWX",
+      "metric": "Backlog",
+      "period_end": "2025-12-31",
+      "period_label": "Q4 FY2025",
+      "value": 284.3,
+      "unit": "USD millions",
+      "evidence_id": "DEMO-EV-NWX-0002",
+      "data_status": "demo_fictional",
+      "note": ""
+    },
+    {
+      "id": "DEMO-FIN-0010",
+      "company_id": "DEMO-CO-NWX",
+      "metric": "Backlog",
+      "period_end": "2026-03-31",
+      "period_label": "Q1 FY2026",
+      "value": 251.9,
+      "unit": "USD millions",
+      "evidence_id": "",
+      "data_status": "demo_fictional",
+      "note": ""
+    },
+    {
+      "id": "DEMO-FIN-0011",
+      "company_id": "DEMO-CO-NWX",
+      "metric": "Accounts receivable",
+      "period_end": "2025-03-31",
+      "period_label": "Q1 FY2025",
+      "value": 96.2,
+      "unit": "USD millions",
+      "evidence_id": "",
+      "data_status": "demo_fictional",
+      "note": ""
+    },
+    {
+      "id": "DEMO-FIN-0012",
+      "company_id": "DEMO-CO-NWX",
+      "metric": "Accounts receivable",
+      "period_end": "2025-06-30",
+      "period_label": "Q2 FY2025",
+      "value": 101.4,
+      "unit": "USD millions",
+      "evidence_id": "",
+      "data_status": "demo_fictional",
+      "note": ""
+    },
+    {
+      "id": "DEMO-FIN-0013",
+      "company_id": "DEMO-CO-NWX",
+      "metric": "Accounts receivable",
+      "period_end": "2025-09-30",
+      "period_label": "Q3 FY2025",
+      "value": 108.8,
+      "unit": "USD millions",
+      "evidence_id": "",
+      "data_status": "demo_fictional",
+      "note": ""
+    },
+    {
+      "id": "DEMO-FIN-0014",
+      "company_id": "DEMO-CO-NWX",
+      "metric": "Accounts receivable",
+      "period_end": "2025-12-31",
+      "period_label": "Q4 FY2025",
+      "value": 131.5,
+      "unit": "USD millions",
+      "evidence_id": "",
+      "data_status": "demo_fictional",
+      "note": ""
+    },
+    {
+      "id": "DEMO-FIN-0015",
+      "company_id": "DEMO-CO-NWX",
+      "metric": "Accounts receivable",
+      "period_end": "2026-03-31",
+      "period_label": "Q1 FY2026",
+      "value": 120.4,
+      "unit": "USD millions",
+      "evidence_id": "",
+      "data_status": "demo_fictional",
+      "note": ""
+    },
+    {
+      "id": "DEMO-FIN-0016",
+      "company_id": "DEMO-CO-NWX",
+      "metric": "Inventory",
+      "period_end": "2025-03-31",
+      "period_label": "Q1 FY2025",
+      "value": 71,
+      "unit": "USD millions",
+      "evidence_id": "",
+      "data_status": "demo_fictional",
+      "note": ""
+    },
+    {
+      "id": "DEMO-FIN-0017",
+      "company_id": "DEMO-CO-NWX",
+      "metric": "Inventory",
+      "period_end": "2025-06-30",
+      "period_label": "Q2 FY2025",
+      "value": 73.9,
+      "unit": "USD millions",
+      "evidence_id": "",
+      "data_status": "demo_fictional",
+      "note": ""
+    },
+    {
+      "id": "DEMO-FIN-0018",
+      "company_id": "DEMO-CO-NWX",
+      "metric": "Inventory",
+      "period_end": "2025-09-30",
+      "period_label": "Q3 FY2025",
+      "value": 78.2,
+      "unit": "USD millions",
+      "evidence_id": "",
+      "data_status": "demo_fictional",
+      "note": ""
+    },
+    {
+      "id": "DEMO-FIN-0019",
+      "company_id": "DEMO-CO-NWX",
+      "metric": "Inventory",
+      "period_end": "2025-12-31",
+      "period_label": "Q4 FY2025",
+      "value": 94.6,
+      "unit": "USD millions",
+      "evidence_id": "",
+      "data_status": "demo_fictional",
+      "note": ""
+    },
+    {
+      "id": "DEMO-FIN-0020",
+      "company_id": "DEMO-CO-NWX",
+      "metric": "Inventory",
+      "period_end": "2026-03-31",
+      "period_label": "Q1 FY2026",
+      "value": 101.3,
+      "unit": "USD millions",
+      "evidence_id": "",
+      "data_status": "demo_fictional",
+      "note": ""
+    },
+    {
+      "id": "DEMO-FIN-0021",
+      "company_id": "DEMO-CO-CVB",
+      "metric": "Cash and equivalents",
+      "period_end": "2025-06-30",
+      "period_label": "Q2 FY2025",
+      "value": 412,
+      "unit": "USD millions",
+      "evidence_id": "",
+      "data_status": "demo_fictional",
+      "note": ""
+    },
+    {
+      "id": "DEMO-FIN-0022",
+      "company_id": "DEMO-CO-CVB",
+      "metric": "Cash and equivalents",
+      "period_end": "2025-09-30",
+      "period_label": "Q3 FY2025",
+      "value": 371.5,
+      "unit": "USD millions",
+      "evidence_id": "",
+      "data_status": "demo_fictional",
+      "note": ""
+    },
+    {
+      "id": "DEMO-FIN-0023",
+      "company_id": "DEMO-CO-CVB",
+      "metric": "Cash and equivalents",
+      "period_end": "2025-12-31",
+      "period_label": "Q4 FY2025",
+      "value": 335.2,
+      "unit": "USD millions",
+      "evidence_id": "",
+      "data_status": "demo_fictional",
+      "note": ""
+    },
+    {
+      "id": "DEMO-FIN-0024",
+      "company_id": "DEMO-CO-CVB",
+      "metric": "Cash and equivalents",
+      "period_end": "2026-03-31",
+      "period_label": "Q1 FY2026",
+      "value": 610.4,
+      "unit": "USD millions",
+      "evidence_id": "",
+      "data_status": "demo_fictional",
+      "note": ""
+    },
+    {
+      "id": "DEMO-FIN-0025",
+      "company_id": "DEMO-CO-CVB",
+      "metric": "R&D expense",
+      "period_end": "2025-06-30",
+      "period_label": "Q2 FY2025",
+      "value": 38.1,
+      "unit": "USD millions",
+      "evidence_id": "",
+      "data_status": "demo_fictional",
+      "note": ""
+    },
+    {
+      "id": "DEMO-FIN-0026",
+      "company_id": "DEMO-CO-CVB",
+      "metric": "R&D expense",
+      "period_end": "2025-09-30",
+      "period_label": "Q3 FY2025",
+      "value": 41.7,
+      "unit": "USD millions",
+      "evidence_id": "",
+      "data_status": "demo_fictional",
+      "note": ""
+    },
+    {
+      "id": "DEMO-FIN-0027",
+      "company_id": "DEMO-CO-CVB",
+      "metric": "R&D expense",
+      "period_end": "2025-12-31",
+      "period_label": "Q4 FY2025",
+      "value": 44.9,
+      "unit": "USD millions",
+      "evidence_id": "",
+      "data_status": "demo_fictional",
+      "note": ""
+    },
+    {
+      "id": "DEMO-FIN-0028",
+      "company_id": "DEMO-CO-CVB",
+      "metric": "R&D expense",
+      "period_end": "2026-03-31",
+      "period_label": "Q1 FY2026",
+      "value": 47.2,
+      "unit": "USD millions",
+      "evidence_id": "",
+      "data_status": "demo_fictional",
+      "note": ""
+    }
+  ],
+  "mkt_obs": [
+    {
+      "id": "DEMO-MKT-0001",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-01-02",
+      "close": 52.27,
+      "benchmark_close": 4954.66,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 823754,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0002",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-01-05",
+      "close": 52.08,
+      "benchmark_close": 4913.66,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 1052135,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0003",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-01-06",
+      "close": 52.05,
+      "benchmark_close": 4921.46,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 1032384,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0004",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-01-07",
+      "close": 52.57,
+      "benchmark_close": 5001.17,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 962093,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0005",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-01-08",
+      "close": 51.84,
+      "benchmark_close": 4984.27,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 809828,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0006",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-01-09",
+      "close": 50.74,
+      "benchmark_close": 4968.12,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 1006881,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0007",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-01-12",
+      "close": 50.8,
+      "benchmark_close": 4997.59,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 946838,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0008",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-01-13",
+      "close": 50.7,
+      "benchmark_close": 4946.56,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 1197499,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0009",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-01-14",
+      "close": 51.55,
+      "benchmark_close": 4990.87,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 911316,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0010",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-01-15",
+      "close": 51.93,
+      "benchmark_close": 5035.38,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 1196811,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0011",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-01-16",
+      "close": 52.32,
+      "benchmark_close": 5085.54,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 935721,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0012",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-01-19",
+      "close": 50.62,
+      "benchmark_close": 4954.12,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 800070,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0013",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-01-20",
+      "close": 49.61,
+      "benchmark_close": 4887.51,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 1070333,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0014",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-01-21",
+      "close": 50.09,
+      "benchmark_close": 4890.99,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 1075732,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0015",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-01-22",
+      "close": 49.83,
+      "benchmark_close": 4901.21,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 1059076,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0016",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-01-23",
+      "close": 51.32,
+      "benchmark_close": 5000.08,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 919905,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0017",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-01-26",
+      "close": 51.71,
+      "benchmark_close": 5012.66,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 848395,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0018",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-01-27",
+      "close": 52.11,
+      "benchmark_close": 5036.47,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 802980,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0019",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-01-28",
+      "close": 52.54,
+      "benchmark_close": 5006.67,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 1073156,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0020",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-01-29",
+      "close": 52.76,
+      "benchmark_close": 5065.41,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 1062989,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0021",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-01-30",
+      "close": 53.18,
+      "benchmark_close": 5083.88,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 1077847,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0022",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-02-02",
+      "close": 51.62,
+      "benchmark_close": 5063.33,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 1077241,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0023",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-02-03",
+      "close": 51.88,
+      "benchmark_close": 5102.29,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 858742,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0024",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-02-04",
+      "close": 50.77,
+      "benchmark_close": 5058.67,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 900691,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0025",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-02-05",
+      "close": 49.91,
+      "benchmark_close": 5053.29,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 893387,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0026",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-02-06",
+      "close": 49.37,
+      "benchmark_close": 5020.64,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 961109,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0027",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-02-09",
+      "close": 48.42,
+      "benchmark_close": 4973.61,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 837215,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0028",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-02-10",
+      "close": 47.69,
+      "benchmark_close": 5016.21,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 1123536,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0029",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-02-11",
+      "close": 46.72,
+      "benchmark_close": 4941.93,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 1185311,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0030",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-02-12",
+      "close": 45.41,
+      "benchmark_close": 4919.96,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 1163094,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0031",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-02-13",
+      "close": 46.11,
+      "benchmark_close": 4902.27,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 939753,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0032",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-02-16",
+      "close": 46.11,
+      "benchmark_close": 4932.49,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 1194975,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0033",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-02-17",
+      "close": 46.69,
+      "benchmark_close": 4946.59,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 1089373,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0034",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-02-18",
+      "close": 47.15,
+      "benchmark_close": 4949.39,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 1115510,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0035",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-02-19",
+      "close": 46.63,
+      "benchmark_close": 4930.74,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 968154,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0036",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-02-20",
+      "close": 47.23,
+      "benchmark_close": 5008.73,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 867363,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0037",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-02-23",
+      "close": 47.91,
+      "benchmark_close": 5005.97,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 884753,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0038",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-02-24",
+      "close": 47.62,
+      "benchmark_close": 4979.44,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 855695,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0039",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-02-25",
+      "close": 47.65,
+      "benchmark_close": 4975.24,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 906946,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0040",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-02-26",
+      "close": 48.56,
+      "benchmark_close": 5002.11,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 1017032,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0041",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-02-27",
+      "close": 47.75,
+      "benchmark_close": 5060.89,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 925223,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0042",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-03-02",
+      "close": 49.52,
+      "benchmark_close": 5148.93,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 925531,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0043",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-03-03",
+      "close": 49.58,
+      "benchmark_close": 5149,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 1032372,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0044",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-03-04",
+      "close": 51.23,
+      "benchmark_close": 5169.86,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 1009871,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0045",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-03-05",
+      "close": 50.87,
+      "benchmark_close": 5155.76,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 1009199,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0046",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-03-06",
+      "close": 50.04,
+      "benchmark_close": 5116.71,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 822120,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0047",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-03-09",
+      "close": 48.7,
+      "benchmark_close": 5035.39,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 1006022,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0048",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-03-10",
+      "close": 47.86,
+      "benchmark_close": 5038.24,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 1147041,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0049",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-03-11",
+      "close": 47.23,
+      "benchmark_close": 4990.4,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 1162524,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0050",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-03-12",
+      "close": 47.92,
+      "benchmark_close": 5016.02,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 975340,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0051",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-03-13",
+      "close": 47.92,
+      "benchmark_close": 5068.33,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 1020097,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0052",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-03-16",
+      "close": 48.38,
+      "benchmark_close": 5071.8,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 843787,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0053",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-03-17",
+      "close": 47.45,
+      "benchmark_close": 5010.61,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 933262,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0054",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-03-18",
+      "close": 47.86,
+      "benchmark_close": 5006.98,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 873308,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0055",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-03-19",
+      "close": 48.24,
+      "benchmark_close": 5010.79,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 917992,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0056",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-03-20",
+      "close": 48.75,
+      "benchmark_close": 5057.97,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 935165,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0057",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-03-23",
+      "close": 48.9,
+      "benchmark_close": 5021.44,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 937211,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0058",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-03-24",
+      "close": 48.74,
+      "benchmark_close": 5027.91,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 1049761,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0059",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-03-25",
+      "close": 49.75,
+      "benchmark_close": 5140.96,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 1038543,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0060",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-03-26",
+      "close": 52.41,
+      "benchmark_close": 5248.3,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 997879,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0061",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-03-27",
+      "close": 51.65,
+      "benchmark_close": 5264.21,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 1126951,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0062",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-03-30",
+      "close": 52.12,
+      "benchmark_close": 5299.18,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 955321,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0063",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-03-31",
+      "close": 51.94,
+      "benchmark_close": 5276.85,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 970874,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0064",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-04-01",
+      "close": 52.35,
+      "benchmark_close": 5311.12,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 1129206,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0065",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-04-02",
+      "close": 52.07,
+      "benchmark_close": 5312.47,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 861641,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0066",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-04-03",
+      "close": 52.33,
+      "benchmark_close": 5286.6,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 1136073,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0067",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-04-06",
+      "close": 52.31,
+      "benchmark_close": 5267.75,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 1182787,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0068",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-04-07",
+      "close": 50.3,
+      "benchmark_close": 5215.38,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 1067649,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0069",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-04-08",
+      "close": 50.78,
+      "benchmark_close": 5215.13,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 1186745,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0070",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-04-09",
+      "close": 49.8,
+      "benchmark_close": 5149.32,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 1093093,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0071",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-04-10",
+      "close": 47.32,
+      "benchmark_close": 5102.89,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 4664273,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0072",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-04-13",
+      "close": 46.49,
+      "benchmark_close": 5108.72,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 1084212,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0073",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-04-14",
+      "close": 45.39,
+      "benchmark_close": 5065.43,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 847075,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0074",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-04-15",
+      "close": 39.05,
+      "benchmark_close": 5087.4,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 4454428,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0075",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-04-16",
+      "close": 38.98,
+      "benchmark_close": 5145.4,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 989529,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0076",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-04-17",
+      "close": 38.57,
+      "benchmark_close": 5115.22,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 826977,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0077",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-04-20",
+      "close": 37.94,
+      "benchmark_close": 5071.48,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 1132489,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0078",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-04-21",
+      "close": 37.89,
+      "benchmark_close": 5077.26,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 1090783,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0079",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-04-22",
+      "close": 38.35,
+      "benchmark_close": 5143.39,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 853133,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0080",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-04-23",
+      "close": 38.21,
+      "benchmark_close": 5119.22,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 992066,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0081",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-04-24",
+      "close": 38.71,
+      "benchmark_close": 5126.91,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 1000434,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0082",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-04-27",
+      "close": 38.11,
+      "benchmark_close": 5102.19,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 1035415,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0083",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-04-28",
+      "close": 37.38,
+      "benchmark_close": 5051.12,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 864976,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0084",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-04-29",
+      "close": 37.03,
+      "benchmark_close": 5007.53,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 991188,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0085",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-04-30",
+      "close": 37.42,
+      "benchmark_close": 5062.92,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 1088008,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0086",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-05-01",
+      "close": 36.71,
+      "benchmark_close": 5114.26,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 851182,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0087",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-05-04",
+      "close": 36.69,
+      "benchmark_close": 5088.94,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 1017171,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0088",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-05-05",
+      "close": 36.24,
+      "benchmark_close": 5029.03,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 842439,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0089",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-05-06",
+      "close": 36.09,
+      "benchmark_close": 5044.7,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 951621,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0090",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-05-07",
+      "close": 34.89,
+      "benchmark_close": 4997.54,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 1012095,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0091",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-05-08",
+      "close": 34.57,
+      "benchmark_close": 4963.21,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 924108,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0092",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-05-11",
+      "close": 33.72,
+      "benchmark_close": 4904.85,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 992130,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0093",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-05-12",
+      "close": 33.85,
+      "benchmark_close": 4955.21,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 938785,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0094",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-05-13",
+      "close": 33.9,
+      "benchmark_close": 4967.7,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 966485,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0095",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-05-14",
+      "close": 34.04,
+      "benchmark_close": 5003.48,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 1105586,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0096",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-05-15",
+      "close": 33.75,
+      "benchmark_close": 5009.14,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 904718,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0097",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-05-18",
+      "close": 34.68,
+      "benchmark_close": 5080.1,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 892951,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0098",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-05-19",
+      "close": 33.79,
+      "benchmark_close": 5023.35,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 1065190,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0099",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-05-20",
+      "close": 33.85,
+      "benchmark_close": 5000.98,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 848453,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0100",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-05-21",
+      "close": 34.43,
+      "benchmark_close": 5080.47,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 1000399,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0101",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-05-22",
+      "close": 34.75,
+      "benchmark_close": 5129.06,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 884453,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0102",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-05-25",
+      "close": 34.69,
+      "benchmark_close": 5134.55,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 805304,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0103",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-05-26",
+      "close": 34.72,
+      "benchmark_close": 5156.42,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 1113383,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0104",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-05-27",
+      "close": 34.46,
+      "benchmark_close": 5125.81,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 1104105,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0105",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-05-28",
+      "close": 34.24,
+      "benchmark_close": 5070.47,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 1090105,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    },
+    {
+      "id": "DEMO-MKT-0106",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-05-29",
+      "close": 35.18,
+      "benchmark_close": 5137.84,
+      "benchmark_name": "DEMO Broad Market Index",
+      "volume": 1198294,
+      "adjustment": "Synthetic (no corporate actions)",
+      "source": "Synthetic — fictional demo",
+      "evidence_id": "",
+      "data_status": "demo_fictional"
+    }
+  ],
+  "events": [
+    {
+      "id": "DEMO-EVT-0001",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2025-11-06",
+      "time": "after-close",
+      "event_type": "filing",
+      "title": "Q3 10-Q filed",
+      "description": "Demand described as strong.",
+      "document_id": "DEMO-DOCU-NWX-01",
+      "evidence_ids": [],
+      "person": "",
+      "trade_code": "",
+      "shares": "",
+      "price": "",
+      "plan_10b5_1": "Not applicable",
+      "corrective_candidate": false
+    },
+    {
+      "id": "DEMO-EVT-0002",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-02-12",
+      "time": "after-close",
+      "event_type": "statement",
+      "title": "Q4 earnings call",
+      "description": "CEO: 'robust demand'.",
+      "document_id": "DEMO-DOCU-NWX-02",
+      "evidence_ids": [],
+      "person": "",
+      "trade_code": "",
+      "shares": "",
+      "price": "",
+      "plan_10b5_1": "Not applicable",
+      "corrective_candidate": false
+    },
+    {
+      "id": "DEMO-EVT-0003",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-02-20",
+      "time": "after-close",
+      "event_type": "filing",
+      "title": "FY2025 10-K filed",
+      "description": "Contains demand statement and backlog note.",
+      "document_id": "DEMO-DOCU-NWX-03",
+      "evidence_ids": [
+        "DEMO-EV-NWX-0001",
+        "DEMO-EV-NWX-0002"
+      ],
+      "person": "",
+      "trade_code": "",
+      "shares": "",
+      "price": "",
+      "plan_10b5_1": "Not applicable",
+      "corrective_candidate": false
+    },
+    {
+      "id": "DEMO-EVT-0004",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-03-02",
+      "time": "",
+      "event_type": "insider_trade",
+      "title": "CEO sale (fictional)",
+      "description": "",
+      "document_id": "",
+      "evidence_ids": [],
+      "person": "CEO A. Roe (fictional)",
+      "trade_code": "S",
+      "shares": 25000,
+      "price": 54.1,
+      "plan_10b5_1": "Yes",
+      "corrective_candidate": false
+    },
+    {
+      "id": "DEMO-EVT-0005",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-04-01",
+      "time": "",
+      "event_type": "insider_trade",
+      "title": "CFO sale (fictional)",
+      "description": "",
+      "document_id": "DEMO-DOCU-NWX-04",
+      "evidence_ids": [
+        "DEMO-EV-NWX-0003"
+      ],
+      "person": "CFO J. Doe (fictional)",
+      "trade_code": "S",
+      "shares": 120000,
+      "price": 48.1,
+      "plan_10b5_1": "No",
+      "corrective_candidate": false
+    },
+    {
+      "id": "DEMO-EVT-0006",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-04-10",
+      "time": "intraday",
+      "event_type": "market_event",
+      "title": "Short-seller report published",
+      "description": "Allegations of January cancellations.",
+      "document_id": "",
+      "evidence_ids": [
+        "DEMO-EV-NWX-0004"
+      ],
+      "person": "",
+      "trade_code": "",
+      "shares": "",
+      "price": "",
+      "plan_10b5_1": "Not applicable",
+      "corrective_candidate": false
+    },
+    {
+      "id": "DEMO-EVT-0007",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-04-13",
+      "time": "pre-open",
+      "event_type": "statement",
+      "title": "Company denial press release",
+      "description": "",
+      "document_id": "DEMO-DOCU-NWX-06",
+      "evidence_ids": [
+        "DEMO-EV-NWX-0005"
+      ],
+      "person": "",
+      "trade_code": "",
+      "shares": "",
+      "price": "",
+      "plan_10b5_1": "Not applicable",
+      "corrective_candidate": false
+    },
+    {
+      "id": "DEMO-EVT-0008",
+      "company_id": "DEMO-CO-NWX",
+      "date": "2026-04-15",
+      "time": "pre-open",
+      "event_type": "corrective_disclosure_candidate",
+      "title": "Q1 results: cancellations + guidance cut",
+      "description": "Same release: CEO transition (confounding).",
+      "document_id": "DEMO-DOCU-NWX-05",
+      "evidence_ids": [
+        "DEMO-EV-NWX-0007",
+        "DEMO-EV-NWX-0008"
+      ],
+      "person": "",
+      "trade_code": "",
+      "shares": "",
+      "price": "",
+      "plan_10b5_1": "Not applicable",
+      "corrective_candidate": true
+    },
+    {
+      "id": "DEMO-EVT-0009",
+      "company_id": "DEMO-CO-CVB",
+      "date": "2026-02-26",
+      "time": "",
+      "event_type": "other",
+      "title": "FDA clinical hold notice received",
+      "description": "Per later 8-K.",
+      "document_id": "",
+      "evidence_ids": [
+        "DEMO-EV-CVB-0002"
+      ],
+      "person": "",
+      "trade_code": "",
+      "shares": "",
+      "price": "",
+      "plan_10b5_1": "Not applicable",
+      "corrective_candidate": false
+    },
+    {
+      "id": "DEMO-EVT-0010",
+      "company_id": "DEMO-CO-CVB",
+      "date": "2026-03-04",
+      "time": "",
+      "event_type": "offering",
+      "title": "Follow-on offering priced",
+      "description": "",
+      "document_id": "DEMO-DOCU-CVB-02",
+      "evidence_ids": [],
+      "person": "",
+      "trade_code": "",
+      "shares": "",
+      "price": "",
+      "plan_10b5_1": "Not applicable",
+      "corrective_candidate": false
+    },
+    {
+      "id": "DEMO-EVT-0011",
+      "company_id": "DEMO-CO-CVB",
+      "date": "2026-03-27",
+      "time": "after-close",
+      "event_type": "corrective_disclosure_candidate",
+      "title": "Clinical hold disclosed",
+      "description": "",
+      "document_id": "DEMO-DOCU-CVB-03",
+      "evidence_ids": [],
+      "person": "",
+      "trade_code": "",
+      "shares": "",
+      "price": "",
+      "plan_10b5_1": "Not applicable",
+      "corrective_candidate": true
+    },
+    {
+      "id": "DEMO-EVT-0012",
+      "company_id": "DEMO-CO-HLL",
+      "date": "2025-06-01",
+      "time": "",
+      "event_type": "offering",
+      "title": "Token pre-sale opens",
+      "description": "",
+      "document_id": "DEMO-DOCU-HLL-01",
+      "evidence_ids": [],
+      "person": "",
+      "trade_code": "",
+      "shares": "",
+      "price": "",
+      "plan_10b5_1": "Not applicable",
+      "corrective_candidate": false
+    }
+  ],
+  "tasks": [
+    {
+      "id": "DEMO-TSK-0001",
+      "title": "Compare CFO 2026 sales to two-year trading baseline",
+      "status": "open",
+      "priority": "critical",
+      "company_id": "DEMO-CO-NWX",
+      "issue_id": "DEMO-ISS-NWX-10B5",
+      "due": "2026-11-20",
+      "notes": ""
+    },
+    {
+      "id": "DEMO-TSK-0002",
+      "title": "Find analyst reports on 2026-04-15 to split guidance cut vs. CEO transition",
+      "status": "open",
+      "priority": "critical",
+      "company_id": "DEMO-CO-NWX",
+      "issue_id": "DEMO-ISS-NWX-10B5",
+      "due": "2026-11-22",
+      "notes": ""
+    },
+    {
+      "id": "DEMO-TSK-0003",
+      "title": "Run citator check on Basic, Dura, Macquarie",
+      "status": "in_progress",
+      "priority": "high",
+      "company_id": "",
+      "issue_id": "",
+      "due": "2026-11-18",
+      "notes": ""
+    },
+    {
+      "id": "DEMO-TSK-0004",
+      "title": "Locate underwriting agreement exhibit for CVB offering",
+      "status": "open",
+      "priority": "high",
+      "company_id": "DEMO-CO-CVB",
+      "issue_id": "DEMO-ISS-CVB-S11",
+      "due": "",
+      "notes": ""
+    },
+    {
+      "id": "DEMO-TSK-0005",
+      "title": "Apply 2026 crypto taxonomy to Halcyon token",
+      "status": "blocked",
+      "priority": "normal",
+      "company_id": "DEMO-CO-HLL",
+      "issue_id": "DEMO-ISS-HLL-S5",
+      "due": "",
+      "notes": "Waiting on course notes for Howey treatment."
+    },
+    {
+      "id": "DEMO-TSK-0006",
+      "title": "Pull Form ADV Part 2A for Bramble Ridge",
+      "status": "open",
+      "priority": "normal",
+      "company_id": "DEMO-CO-BRC",
+      "issue_id": "DEMO-ISS-BRC-CMP",
+      "due": "",
+      "notes": ""
+    },
+    {
+      "id": "DEMO-TSK-0007",
+      "title": "Reconcile XBRL backlog values to Note 4",
+      "status": "done",
+      "priority": "normal",
+      "company_id": "DEMO-CO-NWX",
+      "issue_id": "",
+      "due": "2026-11-10",
+      "notes": ""
+    }
+  ],
+  "sections": [
+    {
+      "id": "DEMO-SEC-0001",
+      "order": 1,
+      "title": "Introduction and thesis",
+      "issue_ids": [],
+      "target_pages": 1,
+      "status": "outlined",
+      "evidence_ids": [],
+      "authority_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "DEMO-SEC-0002",
+      "order": 2,
+      "title": "Factual and disclosure background",
+      "issue_ids": [
+        "DEMO-ISS-NWX-10B5"
+      ],
+      "target_pages": 2.5,
+      "status": "drafted",
+      "evidence_ids": [],
+      "authority_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "DEMO-SEC-0003",
+      "order": 3,
+      "title": "Rule 10b-5: falsity, materiality and scienter",
+      "issue_ids": [
+        "DEMO-ISS-NWX-10B5"
+      ],
+      "target_pages": 4,
+      "status": "outlined",
+      "evidence_ids": [
+        "DEMO-EV-NWX-0001",
+        "DEMO-EV-NWX-0002",
+        "DEMO-EV-NWX-0003"
+      ],
+      "authority_ids": [
+        "DEMO-AUTH-BASIC",
+        "DEMO-AUTH-TELLABS",
+        "DEMO-AUTH-MACQUARIE"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "DEMO-SEC-0004",
+      "order": 4,
+      "title": "Reliance and loss causation",
+      "issue_ids": [
+        "DEMO-ISS-NWX-10B5"
+      ],
+      "target_pages": 2.5,
+      "status": "not_started",
+      "evidence_ids": [],
+      "authority_ids": [],
+      "notes": "Needs disaggregation of 2026-04-15 move."
+    },
+    {
+      "id": "DEMO-SEC-0005",
+      "order": 5,
+      "title": "Insider trading and control-person exposure",
+      "issue_ids": [
+        "DEMO-ISS-NWX-IT",
+        "DEMO-ISS-NWX-CP"
+      ],
+      "target_pages": 2,
+      "status": "not_started",
+      "evidence_ids": [],
+      "authority_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "DEMO-SEC-0006",
+      "order": 6,
+      "title": "Defenses and conclusion",
+      "issue_ids": [
+        "DEMO-ISS-NWX-10B5"
+      ],
+      "target_pages": 1.5,
+      "status": "not_started",
+      "evidence_ids": [],
+      "authority_ids": [],
+      "notes": ""
+    }
+  ],
+  "verification_log": [
+    {
+      "id": "DEMO-VLOG-0001",
+      "at": "2026-11-09T14:02:00-06:00",
+      "record_type": "authorities",
+      "record_id": "DEMO-AUTH-TELLABS",
+      "action": "current_validity",
+      "from": "verification_pending",
+      "to": "good_law_citator_checked",
+      "note": "FICTIONAL demo citator check"
+    },
+    {
+      "id": "DEMO-VLOG-0002",
+      "at": "2026-11-10T09:30:00-06:00",
+      "record_type": "evidence",
+      "record_id": "DEMO-EV-NWX-0002",
+      "action": "verification_status",
+      "from": "not_accessed",
+      "to": "verified_from_source",
+      "note": "Read Note 4 (fictional)"
+    }
+  ]
+}
