@@ -1,0 +1,24 @@
+{
+  "name": "securities-intelligence",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Browser-based research workspace for Securities Regulation company assessments (screening, evidence, elements, causation, paper readiness). Educational tool; not legal advice.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "build:standalone": "vite build && node scripts/build-standalone.mjs",
+    "sample-data": "node scripts/generate-sample-data.mjs",
+    "test": "node tests/functional.test.cjs",
+    "test:dist": "vite build && node tests/functional.test.cjs --dist"
+  },
+  "devDependencies": {
+    "jsdom": "^25.0.1",
+    "vite": "^6.3.5"
+  },
+  "engines": {
+    "node": ">=18.18"
+  },
+  "license": "MIT"
+}
